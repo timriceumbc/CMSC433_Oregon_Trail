@@ -1,56 +1,45 @@
 .sprite {
 	background: url("Locations.png") no-repeat;
-	width: 4722px;
-	height: 3696px;
-	background-size: contain;
 }
 .indepen1 {
 	width: 904px;
-	height: 583px;
+	height: 586px;
 	display: inline-block;
-	background-position: -20px -20px;
+	background-position: -18px -18px;
 }
 .indepen2 {
 	width: 904px;
-	height: 583px;
+	height: 586px;
 	display: inline-block;
 	background-position: -24px -624px;
 }
-.stream3 {
-	width: 1410px;
-	height: 815px;
+.fortLar {
+	width: 904px;
+	height: 586px;
 	display: inline-block;
-	background-position: 0 -1625px;
+	background-position: -24px -1238px;
 }
 .tallRock {
-	width: 1410px;
-	height: 815px;
+	width: 904px;
+	height: 586px;
 	display: inline-block;
 	background-position: 0 -2435px;
 }
 .mainStreet {
-	width: 1410px;
-	height: 815px;
+	width: 904px;
+	height: 586px;
 	display: inline-block;
 	background-position: 0 -3245px;
 }
 .indianCliff {
-	width: 1410px;
-	height: 815px;
+	width: 904px;
+	height: 586px;
 	display: inline-block;
 	background-position: 0 -4055px;
 }
 .gravestone {
-	width: 1410px;
-	height: 922px;
+	width: 904px;
+	height: 586px;
 	display: inline-block;
 	background-position: 0 -4872px;
-}
-.textBox {
-	width: 250px;
-	height: 150px;
-	position: absolute;
-	top: 50px;
-	left: 50px;
-	background-color: black;
 }
