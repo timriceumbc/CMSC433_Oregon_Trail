@@ -1,0 +1,118 @@
+.Start
+You May:
+  
+  1. Travel the trail
+  2. Learn about the trail
+  3. See the Oregon Top Ten
+  4. Choose Management Options
+  5. End
+
+What is your choice? 
+.Options
+The Oregon Trail (center)
+Version 2.0 (center)
+---------------------------
+Management Options (center)
+
+You May:
+  
+  1. See the current Top Ten list
+  2. See the original Top Ten list
+  3. Erase the current Top Ten list
+  4. Erase the tombstone messages
+  5. Erase saved games
+  6. Return to main menu
+
+What is your choice? 
+.DeleteSave
+Erase saved games (center)
+
+--------------------
+
+
+There are no saved games. (center)
+
+Press SPACE BAR to continue (center)
+.DeleteTombs
+Erase tombstone messages (center)
+-------------------------
+
+There may be one tombstone on (center)
+the first half of the trail and (center)
+one tombstone on the second (center)
+half. If you erase the (center)
+tombstone messages, they will (center)
+not be replaced until team (center)
+leaders die along the trail. (center)
+
+Do you want to do this? (center)
+.DeleteTop
+Erase Top Ten list (center)
+-------------------------
+
+If you erase the current Top Ten (center)
+list, the names and scores will be (center)
+replaced by those on the original (center)
+list. (center)
+
+Do you want to do this?
+.Learn
+Try taking a journey by
+covered wagon across 2000
+miles of plains, rivers, and
+mountains, Try! On the
+plains, will you slosh your
+oxen through mud and
+water-filled ruts or will you
+plod through dust six inches
+deep? 
+
+Press SPACE BAR to continue (center)
+.Learn2
+How will you cross the rivers?
+If you have money, you might
+take a ferry (if there is a
+ferry). Or, you can ford the
+river and hope you and your
+wagon aren't swallowed alive!
+
+Press SPACE BAR to continue (center)
+.Learn3
+What about supplies? Well, if
+you're low on food you can
+hunt. You might get a buffalo...
+you might. And there are
+bear in the mountains.
+
+Press SPACE BAR to continue (center)
+.Learn4
+At the Dalles, you can try
+navigating the Columbia River,
+but if running the rapids with
+a makeshift raft makes you
+queasy, better take the Barlow
+Road.
+
+Press SPACE BAR to continue (center)
+.Learn5
+If for some reason you don't
+survive -- your wagon burns,
+or thieves steal your oxen, or
+you run out of provisions, or
+you die of cholera -- don't
+give up! Try again...and
+again...until your name is up
+with the others on the Oregon
+Top Ten.
+
+Press SPACE BAR to continue (center)
+.Learn6
+Esc key (center)
+
+You may want to quit in the
+middle of the program. If so,
+press the Escape (Esc) key
+twice whenever the computer is
+waiting for a response.
+
+Press SPACE BAR to continue (center)
