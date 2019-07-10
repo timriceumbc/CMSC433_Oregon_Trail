@@ -46,3 +46,11 @@
 	display: inline-block;
 	background-position: 0 -4872px;
 }
+.textBox {
+	width: 250px;
+	height: 150px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	background-color: black;
+}
