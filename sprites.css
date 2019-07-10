@@ -1,0 +1,45 @@
+.sprite {
+	background: url("Locations.png") no-repeat;
+}
+.indepen1 {
+	width: 904px;
+	height: 586px;
+	display: inline-block;
+	background-position: -18px -18px;
+}
+.indepen2 {
+	width: 904px;
+	height: 586px;
+	display: inline-block;
+	background-position: -24px -624px;
+}
+.fortLar {
+	width: 904px;
+	height: 586px;
+	display: inline-block;
+	background-position: -24px -1238px;
+}
+.fortLar2 {
+	width: 904px;
+	height: 586px;
+	display: inline-block;
+	background-position: -15px -1842px;
+}
+.fortBoise {
+	width: 904px;
+	height: 586px;
+	display: inline-block;
+	background-position: -10px -2454px;
+}
+.indianCliff {
+	width: 904px;
+	height: 586px;
+	display: inline-block;
+	background-position: 0 -4055px;
+}
+.gravestone {
+	width: 904px;
+	height: 586px;
+	display: inline-block;
+	background-position: 0 -4872px;
+}
