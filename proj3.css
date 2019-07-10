@@ -1,0 +1,48 @@
+.sprite {
+	background: url("Locations.png") no-repeat;
+	width: 4722px;
+	height: 3696px;
+	background-size: contain;
+}
+.indepen1 {
+	width: 904px;
+	height: 583px;
+	display: inline-block;
+	background-position: -20px -20px;
+}
+.indepen2 {
+	width: 904px;
+	height: 583px;
+	display: inline-block;
+	background-position: -24px -624px;
+}
+.stream3 {
+	width: 1410px;
+	height: 815px;
+	display: inline-block;
+	background-position: 0 -1625px;
+}
+.tallRock {
+	width: 1410px;
+	height: 815px;
+	display: inline-block;
+	background-position: 0 -2435px;
+}
+.mainStreet {
+	width: 1410px;
+	height: 815px;
+	display: inline-block;
+	background-position: 0 -3245px;
+}
+.indianCliff {
+	width: 1410px;
+	height: 815px;
+	display: inline-block;
+	background-position: 0 -4055px;
+}
+.gravestone {
+	width: 1410px;
+	height: 922px;
+	display: inline-block;
+	background-position: 0 -4872px;
+}
