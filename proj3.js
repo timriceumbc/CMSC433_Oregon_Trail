@@ -1,6 +1,7 @@
 var x = 0;
 gameIterator = setInterval(iterateGame, 500);
 
+
 function iterateGame(){
 	console.log("iterate");
 }
