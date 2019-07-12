@@ -579,4 +579,139 @@ money left      $(value)
 Press SPACE BAR to continue (center)
 __End
 
+.Location2
+(location) (center)
+(date) (center)
+
+Weather: (value)
+Health: (value)
+Pace: (value)
+Rations: (value)
+
+You may:
+  
+  1. Continue on trail
+  2. Check supplies
+  3. Change pace
+  4. Change food rations
+  5. Stop to rest
+  6. Attempt to trade
+  7. Talk to people
+
+What is your choice? 
+__End
+
+.River
+(location) (center)
+(date) (center)
+
+You must cross the river in
+order to continue. The
+river at this point is
+currently (value) feet across,
+and (value) feet deep in the
+middle.
+
+Press SPACE BAR to continue (center)
+__End
+
+.River2
+(location) (center)
+(date) (center)
+
+Weather: (value)
+River width: (value) feet
+River depth: (value) feet
+
+You may:
+
+1. attempt to ford the river
+2. caulk the wagon and float it across
+3. take a ferry across
+4. wait to see if conditions improve
+5. get more information
+
+What is your choice?
+__End
+
+.Riverinfo
+(location) (center)
+(date) (center)
+
+To ford a river means to
+pull your wagon across a
+shallow part of the river,
+with the oxen still
+attached.
+
+Press SPACE BAR to continue (center)
+__End
+
+.Riverinfo2
+(location) (center)
+(date) (center)
+
+To caulk the wagon means to
+seal it so that no water can
+get in. The wagon can then
+be floated across like a
+boat.
+
+Press SPACE BAR to continue (center)
+__End
+
+.Riverinfo3
+(location) (center)
+(date) (center)
+
+To use a ferry means to put
+your wagon on top of a flat
+boat that belongs to someone
+else. The owner of the
+ferry will take your wagon
+across the river.
+
+Press SPACE BAR to continue (center)
+__End
+
+.Wait
+(location) (center)
+(date) (center)
+
+You camp near the river for a day.
+
+Press SPACE BAR to continue (center)
+__End
+
+.Ferry
+(location) (center)
+(date) (center)
+
+The ferry operator says
+that he will charge you (value) and
+that you will have to wait (value)
+days. Are you willing to do
+this?
+__End
+
+.Ontrail
+(date) (center)
+
+Weather: (value)
+Health: (value)
+Pace: (value)
+Rations: (value)
+
+You may:
+  
+  1. Continue on trail
+  2. Check supplies
+  3. Change pace
+  4. Change food rations
+  5. Stop to rest
+  6. Attempt to trade
+  7. Fish for food
+
+What is your choice? 
+__End
 
