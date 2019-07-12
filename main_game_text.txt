@@ -438,15 +438,71 @@ You may:
   
   1. Continue on trail
   2. Check supplies
-  3. Look at map
-  4. Change pace
-  5. Change food rations
-  6. Stop to rest
-  7. Attempt to trade
-  8. Talk to people
-  9. Buy supplies
+  3. Change pace
+  4. Change food rations
+  5. Stop to rest
+  6. Attempt to trade
+  7. Talk to people
+  8. Buy supplies
 
 What is your choice? 
 __End
 
+.Buy
+(location) (center)
+(date) (center)
+
+You may buy:
+
+  1. Oxen          (value) per ox
+  2. Clothing      (value) per set
+  3. Worms         (value) per can
+  4. Wagon wheels  (value) per wheel
+  5. Wagon axles   (value) per axle
+  6. Wagon tongues (value) per tongue
+  7. Food          (value) per pound
+  8. Leave store
+
+You have $(value) to spend.
+Which number?
+__End
+
+.Buy2
+(location) (center)
+(date) (center)
+
+You may buy:
+
+  1. Oxen          (value) per ox
+  2. Clothing      (value) per set
+  3. Worms         (value) per can
+  4. Wagon wheels  (value) per wheel
+  5. Wagon axles   (value) per axle
+  6. Wagon tongues (value) per tongue
+  7. Food          (value) per pound
+  8. Leave store
+
+You have $(value) to spend.
+Which number? (number)
+
+How many?
+__End
+
+.Trade
+Your Supplies (center)
+
+oxen             (value)
+sets of clothing (value)
+worms            (value)
+wagon wheels     (value)
+wagon axles      (value)
+wagon tongues    (value)
+pounds of food   (value)
+
+You meet another emigrant who
+wants (value). He will trade
+you (value).
+
+Are you willing to trade?
+__End
 
