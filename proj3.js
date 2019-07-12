@@ -1,7 +1,8 @@
-var gameIterator = setInterval(iterateGame, 500);
+var gameIterator = setInterval(iterateGame, 1000/60);
+var gameInProgress = false;
 var playerName = "";
 var occupation = "";
-
+var textFile = "";
 
 class Person{
 	measles = 0;
@@ -9,7 +10,7 @@ class Person{
 	exhaustion = 0;
 	typhoid = 0;
 	cholera = 0;
-	dysentary = 0;
+	dysentery = 0;
 	name = "";
 	
 	constructor(name){
@@ -32,13 +33,15 @@ function textBoxInvisible(){
 }
 
 function startGame(){
-	var p = new Person("h");
-	console.log(p.name);
+	gameInProgress = true;
+	document.getElementById("displayText").innerHTML = textFile;
 }
 
 function iterateGame(){
 	console.log("iterate");
-	textBoxInvisible();
+	if(textFile != "" && gameInProgress == false){
+		startGame();
+	}
 }
 
 function keyDown(){
@@ -46,8 +49,23 @@ function keyDown(){
 	keyCode = event.keyCode;
 	
 	if(keyCode == ENTER){
-		console.log(document.getElementById("input").value);
+		processInput(document.getElementById("input").value);
 	}
 }
 
-window.onload = startGame;
+function processInput(input){
+	console.log(input);
+}
+
+function loadDoc() {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			textFile = this.responseText;
+		}
+	};
+	xhttp.open("POST", "main_game_text.txt", true);
+	xhttp.send();
+}
+
+loadDoc();
