@@ -1,8 +1,14 @@
 var gameIterator = setInterval(iterateGame, 1000/60);
-var gameInProgress = false;
+var gameState = "";
+/*possible states: 
+	game not started = ""
+	"\\.Start"
+	...
+*/
 var playerName = "";
 var occupation = "";
 var textFile = "";
+var stateText = "";
 
 class Person{
 	measles = 0;
@@ -33,15 +39,21 @@ function textBoxInvisible(){
 }
 
 function startGame(){
-	gameInProgress = true;
-	document.getElementById("displayText").innerHTML = textFile;
+	changeGameState("\\.Start");
+	document.getElementById("displayText").innerHTML = stateText;
 }
 
 function iterateGame(){
 	console.log("iterate");
-	if(textFile != "" && gameInProgress == false){
-		startGame();
-	}
+}
+
+function changeGameState(state){
+	gameState = state;
+	stateText = "";
+	var pattern = new RegExp(state + ".*?__End", "s");
+	stateText = pattern.exec(textFile)[0];
+	stateText = stateText.substr(state.length, stateText.length - 5 - state.length);
+	console.log(stateText);
 }
 
 function keyDown(){
@@ -62,6 +74,7 @@ function loadDoc() {
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			textFile = this.responseText;
+			startGame();
 		}
 	};
 	xhttp.open("POST", "main_game_text.txt", true);

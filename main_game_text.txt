@@ -1,11 +1,16 @@
 .Start
 You May:
   <br><br>
-  1. Travel the trail
-  2. Learn about the trail
-  3. See the Oregon Top Ten
-  4. Choose Management Options
-  5. End
+&nbsp;&nbsp;
+  1. Travel the trail<br>
+&nbsp;&nbsp;
+  2. Learn about the trail<br>
+&nbsp;&nbsp;
+  3. See the Oregon Top Ten<br>
+&nbsp;&nbsp;
+  4. Choose Management Options<br>
+&nbsp;&nbsp;
+  5. End<br><br>
 
 What is your choice? 
 __End
