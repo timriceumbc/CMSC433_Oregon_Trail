@@ -715,3 +715,27 @@ You may:
 What is your choice? 
 __End
 
+.Fishingwin
+You caught a fish!
+
+The fish weighs (value)
+pounds and you carry it
+back to your wagon.
+
+Press SPACE BAR to continue (center)
+__End
+
+.Fishingfail
+The worm is gone but so
+is the fish.
+
+Try again?
+__End
+
+.Fishingend
+Your last worm is gone. You
+return back to the wagon.
+
+Press SPACE BAR to continue (center)
+__End
+

@@ -694,4 +694,36 @@ days. Are you willing to do
 this?
 __End
 
+.Ontrail
+(date) (center)
+
+Weather: (value)
+Health: (value)
+Pace: (value)
+Rations: (value)
+
+You may:
+  
+  1. Continue on trail
+  2. Check supplies
+  3. Change pace
+  4. Change food rations
+  5. Stop to rest
+  6. Attempt to trade
+  7. Fish for food
+
+What is your choice? 
+__End
+
+.Fishingwin
+Using (value) worms, you
+manage to catch a fish.
+
+The fish weighs (value)
+pounds and you carry it
+back to your wagon.
+
+Press SPACE BAR to continue (center)
+__End
+
 
