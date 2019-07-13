@@ -1,10 +1,110 @@
 .Locations {
 	background: url("Locations.png") no-repeat;
-	--location-scale-factor: 1;
+	--location-scale-factor: 2;
 }
 .People {
 	background: url("People.png") no-repeat;
 	--people-scale-factor: 1;
+}
+.Event {
+	background: url("Event.png") no-repeat;
+	--event-scale-factor: 1;
+}
+.sick1 {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 0.4% 0.4%;
+}
+.better1 {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 33.4% 0.4%;
+}
+.death1 {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 66.3% 0.4%;
+}
+.snake {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 99.2% 0.4%;
+}
+.brokenArm {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 0.4% 33.4%;
+}
+.brokenLeg {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 33.3% 33.3%;
+}
+.grave1 {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 66.3% 33.2%;
+}
+.grave2 {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 99.3% 33.2%;
+}
+.badWater {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 0.3% 66.2%;
+}
+.noWater {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 33.3% 66.2%;
+}
+.spoiled {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 66.3% 66.2%;
+}
+.fruit {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 99.3% 66.2%;
+}
+.freeWagon {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 0.5% 99.6%;
+}
+.brokeWheel {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 33.5% 99.6%;
+}
+.brokeAxle {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 66.4% 99.6%;
+}
+.brokeTounge {
+	width: calc(303px * var(--event-scale-factor));
+	height: calc(232px * var(--event-scale-factor));
+	display: inline-block;
+	background-position: 99.4% 99.6%;
 }
 .indepen1 {
 	width: calc(305px * var(--location-scale-factor));
