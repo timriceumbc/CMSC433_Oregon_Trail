@@ -10,6 +10,16 @@ var occupation = "";
 var textFile = "";
 var stateText = "";
 var party = [];
+var departureMonth = "";
+var money = 0;
+var bill = 0;
+var oxen = 0;
+var food = 0;
+var clothes = 0;
+var worms = 0;
+var wheels = 0;
+var axels = 0;
+var tongues = 0;
 
 class Person{
 	measles = 0;
@@ -41,6 +51,12 @@ function textBoxInvisible(){
 
 function iterateGame(){
 	//console.log("iterate");
+}
+
+function calcBill(){
+	bill = (oxen * 20) + (food * .2) + (clothes * 10) + (worms * .1) + (wheels * 10)
+	+ (axels * 10) + (tongues * 10);
+	console.log("bill: " + bill);
 }
 
 function changeGameState(state){
@@ -100,6 +116,123 @@ function processInput(input){
 			party.push(new Person(input));
 			changeGameState("\\.Leave");
 			console.log(party)
+		}
+	}
+	else if(gameState == "\\.Leave"){
+		if(input == "1"){
+			departureMonth = "March";
+			changeGameState("\\.Equipment");
+		}
+		else if(input == "2"){
+			departureMonth = "April";
+			changeGameState("\\.Equipment");
+		}
+		else if(input == "3"){
+			departureMonth = "May";
+			changeGameState("\\.Equipment");
+		}
+		else if(input == "4"){
+			departureMonth = "June";
+			changeGameState("\\.Equipment");
+		}
+		else if(input == "5"){
+			departureMonth = "July";
+			changeGameState("\\.Equipment");
+		}
+		else if(input == "6"){
+			changeGameState("\\.Advice");
+		}
+	}
+	else if(gameState == "\\.Advice"){
+		changeGameState("\\.Leave");
+	}
+	else if(gameState == "\\.Equipment"){
+		changeGameState("\\.Equipment2");
+	}
+	else if(gameState == "\\.Equipment2"){
+		changeGameState("\\.Equipment3");
+	}
+	else if(gameState == "\\.Equipment3"){
+		changeGameState("\\.Equipment4");
+	}
+	else if(gameState == "\\.Equipment4"){
+		changeGameState("\\.Store1");
+		calcBill();
+	}
+	else if(gameState == "\\.Store1"){
+		if(input == "1"){
+			changeGameState("\\.Mattoxen");
+		}
+		else if(input == "2"){
+			changeGameState("\\.Mattfood");
+		}
+		else if(input == "3"){
+			changeGameState("\\.Mattcloth");
+		}
+		else if(input == "4"){
+			changeGameState("\\.Mattammo");
+		}
+		else if(input == "5"){
+			changeGameState("\\.Mattspare");
+		}
+		else if(input == ""){
+			changeGameState("\\.Mattdone");
+		}
+	}
+	else if(gameState == "\\.Mattoxen"){
+		if(Number(input) >= 0){
+			oxen = Number(input) * 2;
+			calcBill();
+			changeGameState("\\.Store1");
+		}
+	}
+	else if(gameState == "\\.Mattfood"){
+		if(Number(input) >= 0){
+			food = Number(input);
+			calcBill();
+			changeGameState("\\.Store1");
+		}
+	}
+	else if(gameState == "\\.Mattcloth"){
+		if(Number(input) >= 0){
+			clothes = Number(input);
+			calcBill();
+			changeGameState("\\.Store1");
+		}
+	}
+	else if(gameState == "\\.Mattammo"){
+		if(Number(input) >= 0){
+			worms = Number(input) * 20;
+			calcBill();
+			changeGameState("\\.Store1");
+		}
+	}
+	else if(gameState == "\\.Mattspare"){
+		if(Number(input) >= 0){
+			wheels = Number(input);
+			calcBill();
+			changeGameState("\\.Mattspare2");
+		}
+	}
+	else if(gameState == "\\.Mattspare2"){
+		if(Number(input) >= 0){
+			axels = Number(input);
+			calcBill();
+			changeGameState("\\.Mattspare3");
+		}
+	}
+	else if(gameState == "\\.Mattspare3"){
+		if(Number(input) >= 0){
+			tongues = Number(input);
+			calcBill();
+			changeGameState("\\.Store1");
+		}
+	}
+	else if(gameState == "\\.Mattdone"){
+		if(Number(input) >= 0){
+			wheels = Number(input);
+			calcBill();
+			changeGameState("\\.Location");
 		}
 	}
 }
