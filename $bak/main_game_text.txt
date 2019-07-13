@@ -1,11 +1,16 @@
 .Start
 You May:
   <br><br>
-  1. Travel the trail
-  2. Learn about the trail
-  3. See the Oregon Top Ten
-  4. Choose Management Options
-  5. End
+&nbsp;&nbsp;
+  1. Travel the trail<br>
+&nbsp;&nbsp;
+  2. Learn about the trail<br>
+&nbsp;&nbsp;
+  3. See the Oregon Top Ten<br>
+&nbsp;&nbsp;
+  4. Choose Management Options<br>
+&nbsp;&nbsp;
+  5. End<br><br>
 
 What is your choice? 
 __End
@@ -716,8 +721,7 @@ What is your choice?
 __End
 
 .Fishingwin
-Using (value) worms, you
-manage to catch a fish.
+You caught a fish!
 
 The fish weighs (value)
 pounds and you carry it
@@ -726,4 +730,17 @@ back to your wagon.
 Press SPACE BAR to continue (center)
 __End
 
+.Fishingfail
+The worm is gone but so
+is the fish.
+
+Try again?
+__End
+
+.Fishingend
+Your last worm is gone. You
+return back to the wagon.
+
+Press SPACE BAR to continue (center)
+__End
 

@@ -41,7 +41,7 @@ Erase saved games (center)
 
 There are no saved games. (center)
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .DeleteTombs
@@ -82,7 +82,7 @@ water-filled ruts or will you
 plod through dust six inches
 deep? 
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Learn2
@@ -93,7 +93,7 @@ ferry). Or, you can ford the
 river and hope you and your
 wagon aren't swallowed alive!
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Learn3
@@ -103,7 +103,7 @@ hunt. You might get a buffalo...
 you might. And there are
 bear in the mountains.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Learn4
@@ -114,7 +114,7 @@ a makeshift raft makes you
 queasy, better take the Barlow
 Road.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Learn5
@@ -128,7 +128,7 @@ again...until your name is up
 with the others on the Oregon
 Top Ten.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Learn6
@@ -140,7 +140,7 @@ press the Escape (Esc) key
 twice whenever the computer is
 waiting for a response.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Travel
@@ -172,7 +172,7 @@ farmer earns the greatest
 number of points and the
 banker earns the least.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Chosen
@@ -224,7 +224,7 @@ leave at just the right time,
 there will be green grass and
 the weather will still be cool.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Equipment
@@ -234,14 +234,14 @@ supplies. You have $(value) in
 cash, but you don't have to
 spend it all now.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Equipment2
 You can buy whatever you need at
 Matt's General Store.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Equipment3
@@ -255,7 +255,7 @@ what you need:
   - clothing for both
     summer and winter
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Equipment4
@@ -272,7 +272,7 @@ what you need:
   - spare parts for your
     wagon
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Store1
@@ -294,7 +294,7 @@ Amount you have: $(value)
   Which item would you
   like to buy?
   
-  Press SPACE BAR to
+  Press ENTER to
   leave store
 __End
 
@@ -427,7 +427,7 @@ You have a long and
 difficult journey ahead
 of you.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Location
@@ -566,7 +566,7 @@ enough sleep at night. You finish
 each day feeling absolutely
 exhausted, and your health suffers.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Supplies
@@ -581,7 +581,7 @@ wagon tongues    (value)
 pounds of food   (value)
 money left      $(value)
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Location2
@@ -617,7 +617,7 @@ currently (value) feet across,
 and (value) feet deep in the
 middle.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .River2
@@ -649,7 +649,7 @@ shallow part of the river,
 with the oxen still
 attached.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Riverinfo2
@@ -662,7 +662,7 @@ get in. The wagon can then
 be floated across like a
 boat.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Riverinfo3
@@ -676,7 +676,7 @@ else. The owner of the
 ferry will take your wagon
 across the river.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Wait
@@ -685,7 +685,7 @@ __End
 
 You camp near the river for a day.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Ferry
@@ -727,7 +727,7 @@ The fish weighs (value)
 pounds and you carry it
 back to your wagon.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
 .Fishingfail
@@ -741,6 +741,6 @@ __End
 Your last worm is gone. You
 return back to the wagon.
 
-Press SPACE BAR to continue (center)
+Press ENTER to continue (center)
 __End
 
