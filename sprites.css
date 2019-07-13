@@ -1,5 +1,8 @@
-.sprite {
+.Locations {
 	background: url("Locations.png") no-repeat;
+}
+.People {
+	background: url("People.png") no-repeat;
 }
 .indepen1 {
 	width: 904px;
@@ -42,4 +45,136 @@
 	height: 586px;
 	display: inline-block;
 	background-position: 0 -4872px;
+}
+.p1 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: 0 -1px;
+}
+.p2 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -330px -1px;
+}
+.p3 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -660px -1px;
+}
+.p4 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -993px -1px;
+}
+.p5 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: 0 -255px;
+}
+.p6 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -330px -255px;
+}
+.p7 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -660px -255px;
+}
+.p8 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -993px -255px;
+}
+.p9 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: 0 -508px;
+}
+.p10 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -330px -508px;
+}
+.p11 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -660px -508px;
+}
+.p12 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -994px -509px;
+}
+.p13 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -2px -763px;
+}
+.p14 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -332px -763px;
+}
+.p15 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -663px -764px;
+}
+.p16 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -992px -765px;
+}
+.p17 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -1px -1020px;
+}
+.p18 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -334px -1020px;
+}
+.p19 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -665px -1020px;
+}
+.p20 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -999px -1022px;
+}
+.p21 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: 0 -1278px;
+}
+.p22 {
+	width: 330px;
+	height: 254px;
+	display: inline-block;
+	background-position: -332px -1277px;
 }
