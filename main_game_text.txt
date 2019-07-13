@@ -16,738 +16,888 @@ What is your choice?
 __End
 
 .Options
-The Oregon Trail (center)
-Version 2.0 (center)
+The Oregon Trail<br>
+Version 2.0<br>
 ---------------------------
-Management Options (center)
-
+  <br><br>
+Management Options
+  <br><br>
 You May:
-  
-  1. See the current Top Ten list
-  2. See the original Top Ten list
-  3. Erase the current Top Ten list
-  4. Erase the tombstone messages
-  5. Erase saved games
-  6. Return to main menu
+  <br><br>
+  &nbsp;&nbsp;
+  1. See the current Top Ten list<br>
+  &nbsp;&nbsp;
+  2. See the original Top Ten list<br>
+  &nbsp;&nbsp;
+  3. Erase the current Top Ten list<br>
+  &nbsp;&nbsp;
+  4. Erase the tombstone messages<br>
+  &nbsp;&nbsp;
+  5. Erase saved games<br>
+  &nbsp;&nbsp;
+  6. Return to main menu<br><br>
 
 What is your choice?
 __End
  
 .DeleteSave
-Erase saved games (center)
-
---------------------
-
-
-There are no saved games. (center)
-
-Press ENTER to continue (center)
+Erase saved games<br>
+---------------------------
+  <br><br>
+There are no saved games.
+  <br><br>
+Press ENTER to continue
 __End
 
 .DeleteTombs
-Erase tombstone messages (center)
--------------------------
+Erase tombstone messages<br>
+---------------------------
+  <br><br>
+There may be one tombstone on<br>
+the first half of the trail and<br>
+one tombstone on the second<br>
+half. If you erase the<br>
+tombstone messages, they will<br>
+not be replaced until team<br>
+leaders die along the trail.<br><br>
 
-There may be one tombstone on (center)
-the first half of the trail and (center)
-one tombstone on the second (center)
-half. If you erase the (center)
-tombstone messages, they will (center)
-not be replaced until team (center)
-leaders die along the trail. (center)
-
-Do you want to do this? (center)
+Do you want to do this?
 __End
 
 .DeleteTop
-Erase Top Ten list (center)
--------------------------
+Erase Top Ten list <br>
+---------------------------
+  <br><br>
 
-If you erase the current Top Ten (center)
-list, the names and scores will be (center)
-replaced by those on the original (center)
-list. (center)
+If you erase the current Top Ten<br>
+list, the names and scores will be<br>
+replaced by those on the original<br>
+list.<br><br>
 
-Do you want to do this? (center)
+Do you want to do this?<br>
 __End
 
 .Learn
-Try taking a journey by
-covered wagon across 2000
-miles of plains, rivers, and
-mountains, Try! On the
-plains, will you slosh your
-oxen through mud and
-water-filled ruts or will you
-plod through dust six inches
-deep? 
+Try taking a journey by<br>
+covered wagon across 2000<br>
+miles of plains, rivers, and<br>
+mountains, Try! On the<br>
+plains, will you slosh your<br>
+oxen through mud and<br>
+water-filled ruts or will you<br>
+plod through dust six inches<br>
+deep?<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue
 __End
 
 .Learn2
-How will you cross the rivers?
-If you have money, you might
-take a ferry (if there is a
-ferry). Or, you can ford the
-river and hope you and your
-wagon aren't swallowed alive!
+How will you cross the rivers?<br>
+If you have money, you might<br>
+take a ferry (if there is a<br>
+ferry). Or, you can ford the<br>
+river and hope you and your<br>
+wagon aren't swallowed alive!<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Learn3
-What about supplies? Well, if
-you're low on food you can
-hunt. You might get a buffalo...
-you might. And there are
-bear in the mountains.
+What about supplies? Well, if<br>
+you're low on food you can<br>
+fish. You might get a big one...<br>
+you might.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Learn4
-At the Dalles, you can try
-navigating the Columbia River,
-but if running the rapids with
-a makeshift raft makes you
-queasy, better take the Barlow
-Road.
+At the Dalles, you can try<br>
+navigating the Columbia River,<br>
+but if running the rapids with<br>
+a makeshift raft makes you<br>
+queasy, better take the Barlow<br>
+Road.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Learn5
-If for some reason you don't
-survive -- your wagon burns,
-or thieves steal your oxen, or
-you run out of provisions, or
-you die of cholera -- don't
-give up! Try again...and
-again...until your name is up
-with the others on the Oregon
-Top Ten.
+If for some reason you don't<br>
+survive -- your wagon burns,<br>
+or thieves steal your oxen, or<br>
+you run out of provisions, or<br>
+you die of cholera -- don't<br>
+give up! Try again...and<br>
+again...until your name is up<br>
+with the others on the Oregon<br>
+Top Ten.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Learn6
-Esc key (center)
+Esc key<br><br>
 
-You may want to quit in the
-middle of the program. If so,
-press the Escape (Esc) key
-twice whenever the computer is
-waiting for a response.
+You may want to quit in the<br>
+middle of the program. If so,<br>
+press the Escape (Esc) key<br>
+twice whenever the computer is<br>
+waiting for a response.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue
 __End
 
 .Travel
-Many kinds of people made the
+Many kinds of people made the<br>
 trip to Oregon.
+  <br><br>
 
 You may:
-
-  1. Be a banker from Boston
-  2. be a carpenter from Ohio
-  3. Be a farmer from Illinois
-  4. Find out the difference
-     between these choices
+  <br><br>
+  &nbsp;&nbsp;
+  1. Be a banker from Boston<br>
+  &nbsp;&nbsp;
+  2. be a carpenter from Ohio<br>
+  &nbsp;&nbsp;
+  3. Be a farmer from Illinois<br>
+  &nbsp;&nbsp;
+  4. Find out the difference<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     between these choices<br><br>
 
 What is your choice? 
 __End
 
 .Diff
-Traveling to Oregon isn't easy!
-But if you're a banker, you'll
-have more money for supplies
-and services than a carpenter
-or a farmer.
+Traveling to Oregon isn't easy!<br>
+But if you're a banker, you'll<br>
+have more money for supplies<br>
+and services than a carpenter<br>
+or a farmer.<br><br>
 
-However, the harder you have
-to try, the more points you
-deserve! Therefore, the
-farmer earns the greatest
-number of points and the
-banker earns the least.
+However, the harder you have<br>
+to try, the more points you<br>
+deserve! Therefore, the<br>
+farmer earns the greatest<br>
+number of points and the<br>
+banker earns the least.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue
 __End
 
 .Chosen
-(image)
-What is the first name of the
+What is the first name of the<br>
 wagon leader?
 __End
 
 .Party
-(image)
-What are the first names of the
-four other members in your party?
+What are the first names of the<br>
+four other members in your party?<br><br>
 
-1. (name)
-2. 
-3. 
-4. 
-5. 
-(Enter names or press Enter) (center) (replace with 'Are these names correct?')
+1. (playerName)<br>
+2. <br>
+3. <br>
+4. <br>
+5. <br>
+(Enter names or press Enter)
+__End
+
+.Party2
+What are the first names of the<br>
+four other members in your party?<br><br>
+
+1. (playerName)<br>
+2. (party[1])<br>
+3. <br>
+4. <br>
+5. <br> 
+(Enter names or press Enter)
+__End
+
+.Party3
+What are the first names of the<br>
+four other members in your party?<br><br>
+
+1. (playerName)<br>
+2. (party[1])<br>
+3. (party[2])<br>
+4. <br>
+5. <br> 
+(Enter names or press Enter)
+__End
+
+.Party4
+What are the first names of the<br>
+four other members in your party?<br><br>
+
+1. (playerName)<br>
+2. (party[1])<br>
+3. (party[2])<br>
+4. (party[3])<br>
+5. <br> 
+(Enter names or press Enter)
+__End
+
+.Party5
+What are the first names of the<br>
+four other members in your party?<br><br>
+
+1. (playerName)<br>
+2. (party[1])<br>
+3. (party[2])<br>
+4. (party[3])<br>
+5. (party[4])<br> 
+Are these names correct?
 __End
 
 .Leave
-It is 1848. Your jumping off
-place for Oregon is Independence,
-Missouri. You must decide which
-month to leave Independence.
-
-  1. March
-  2. April
-  3. May
-  4. June
-  5. July
-  6. Ask for advice
+It is 1848. Your jumping off<br>
+place for Oregon is Independence,<br>
+Missouri. You must decide which<br>
+month to leave Independence.<br><br>
+  &nbsp;&nbsp;
+  1. March<br>
+  &nbsp;&nbsp;
+  2. April<br>
+  &nbsp;&nbsp;
+  3. May<br>
+  &nbsp;&nbsp;
+  4. June<br>
+  &nbsp;&nbsp;
+  5. July<br>
+  &nbsp;&nbsp;
+  6. Ask for advice<br><br>
 
 What is your choice? 
 __End
 
 .Advice
-You attend a public meeting held
-for "folks with the California -
-Oregon fever." You're told:
+You attend a public meeting held<br>
+for "folks with the California -<br>
+Oregon fever." You're told:<br><br>
 
-If you leave too early, there
-won't be any grass for your
-oxen to eat. If you leave too
-late, you may not get to Oregon
-before winter comes. If you
-leave at just the right time,
-there will be green grass and
-the weather will still be cool.
+If you leave too early, there<br>
+won't be any grass for your<br>
+oxen to eat. If you leave too<br>
+late, you may not get to Oregon<br>
+before winter comes. If you<br>
+leave at just the right time,<br>
+there will be green grass and<br>
+the weather will still be cool.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Equipment
-Before leaving Independence you
-should buy equipment and
-supplies. You have $(value) in
-cash, but you don't have to
-spend it all now.
+Before leaving Independence you<br>
+should buy equipment and<br>
+supplies. You have $(money) in<br>
+cash, but you don't have to<br>
+spend it all now.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Equipment2
-You can buy whatever you need at
-Matt's General Store.
+You can buy whatever you need at<br>
+Matt's General Store.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Equipment3
-"Hello, I'm Matt. So you're going
-to Oregon! I can fix you up with
-what you need:
+"Hello, I'm Matt. So you're going<br>
+to Oregon! I can fix you up with<br>
+what you need:<br><br>
+  &nbsp;&nbsp;
+  - a team of oxen to pull<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+    your wagon<br><br>
+  &nbsp;&nbsp;
+  - clothing for both<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+    summer and winter<br><br>
 
-  - a team of oxen to pull
-    your wagon
-  
-  - clothing for both
-    summer and winter
-
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Equipment4
-"Hello, I'm Matt. So you're going
-to Oregon! I can fix you up with
-what you need:
-
-  - plenty of food for the
-    trip
+"Hello, I'm Matt. So you're going<br>
+to Oregon! I can fix you up with<br>
+what you need:<br><br>
+  &nbsp;&nbsp;
+  - plenty of food for the<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+    trip<br><br>
   
-  - worms for your fishing
-    rods
+  - worms for your fishing<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+    rods<br><br>
   
-  - spare parts for your
-    wagon
+  - spare parts for your<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+    wagon<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Store1
-  Matt's General Store
-  Independence, Missouri
-  
-  (date)
+  &nbsp;&nbsp;
+  Matt's General Store<br>
+  &nbsp;&nbsp;
+  Independence, Missouri<br><br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br>
 
-1. Oxen            $(value)
-2. Food            $(value)
-3. Clothing        $(value)
-4. Worms           $(value)
-5. Spare parts     $(value)
+1. Oxen            $(oxenTotal)<br>
+2. Food            $(foodTotal)<br>
+3. Clothing        $(clothTotal)<br>
+4. Worms           $(wormTotal)<br>
+5. Spare parts     $(spareTotal)<br><br>
 
-Total bill:        $(value)
+Total bill:        $(bill)<br><br>
 
-Amount you have: $(value)
-
-  Which item would you
-  like to buy?
-  
-  Press ENTER to
-  leave store
+Amount you have: $(money)<br><br>
+  &nbsp;&nbsp;
+  Which item would you<br>
+  &nbsp;&nbsp;
+  like to buy?<br><br>
+  &nbsp;&nbsp;
+  Press ENTER to<br>
+  &nbsp;&nbsp;
+  leave store<br>
 __End
 
 .Mattoxen
-  Matt's General Store
-  Independence, Missouri
+  &nbsp;&nbsp;
+  Matt's General Store<br>
+  &nbsp;&nbsp;
+  Independence, Missouri<br><br>
 
-There are 2 oxen in a yoke;
-I recommend at least 3 yoke.
-I charge $40 a yoke.
+There are 2 oxen in a yoke;<br>
+I recommend at least 3 yoke.<br>
+I charge $40 a yoke.<br><br>
 
-How many yoke do you
+Bill so far: $(bill)<br><br>
+
+How many yoke do you<br>
 want?
-
-(image) (center)
-
-Bill so far: $(value)
 __End
 
 .Mattfood
-  Matt's General Store
-  Independence, Missouri
+  &nbsp;&nbsp;
+  Matt's General Store<br>
+  &nbsp;&nbsp;
+  Independence, Missouri<br><br>
 
-I recommend you take at
-least 200 pounds of food
-for each person in your
-family. I see that you have
-(value) people in all. You'll need
-flour, sugar, bacon, and
-coffee. My price is 20
-cents a pound.
+I recommend you take at<br>
+least 200 pounds of food<br>
+for each person in your<br>
+family. I see that you have<br>
+(value) people in all. You'll need<br>
+flour, sugar, bacon, and<br>
+coffee. My price is 20<br>
+cents a pound.<br><br>
 
-How many pounds of food do
+Bill so far: $(bill)<br><br>
+
+How many pounds of food do<br>
 you want?
-
-(image) (center)
-
-Bill so far: $(value)
 __End
 
 .Mattcloth
-  Matt's General Store
-  Independence, Missouri
+  &nbsp;&nbsp;
+  Matt's General Store<br>
+  &nbsp;&nbsp;
+  Independence, Missouri<br><br>
 
-You'll need warm clothing in
-the mountains. I recommend
-taking at least 2 sets of
-clothes per person.
-Each set is $10.00.
+You'll need warm clothing in<br>
+the mountains. I recommend<br>
+taking at least 2 sets of<br>
+clothes per person.<br>
+Each set is $10.00.<br><br>
 
-How many sets of clothes do
+Bill so far: $(bill)<br><br>
+
+How many sets of clothes do<br>
 you want?
-
-(image) (center)
-
-Bill so far: $(value)
 __End
 
 .Mattammo
-  Matt's General Store
-  Independence, Missouri
+  &nbsp;&nbsp;
+  Matt's General Store<br>
+  &nbsp;&nbsp;
+  Independence, Missouri<br><br>
 
-I sell worms in cans
-of 20 worms. Each can
-costs $2.00.
+I sell worms in cans<br>
+of 20 worms. Each can<br>
+costs $2.00.<br><br>
 
-How many cans do
+Bill so far: $(bill)<br><br>
+
+How many cans do<br>
 you want?
-
-(image) (center)
-
-Bill so far: $(value)
 __End
 
 .Mattspare
-  Matt's General Store
-  Independence, Missouri
+  &nbsp;&nbsp;
+  Matt's General Store<br>
+  &nbsp;&nbsp;
+  Independence, Missouri<br><br>
 
-It's a good idea to have a
-few spare parts for your
-wagon. Here are the prices:
+It's a good idea to have a<br>
+few spare parts for your<br>
+wagon. Here are the prices:<br><br>
+  &nbsp;&nbsp;
+  wagon wheel  - $10 each<br>
+  &nbsp;&nbsp;
+  wagon axle   - $10 each<br>
+  &nbsp;&nbsp;
+  wagon tongue - $10 each<br><br>
 
-  wagon wheel  - $10 each
-  wagon axle   - $10 each
-  wagon tongue - $10 each
+Bill so far: $(bill)<br><br>
 
 How many wagon wheels?
-
-Bill so far: $(value)
 __End
 
 .Mattspare2
-  Matt's General Store
-  Independence, Missouri
+  &nbsp;&nbsp;
+  Matt's General Store<br>
+  &nbsp;&nbsp;
+  Independence, Missouri<br><br>
 
-It's a good idea to have a
-few spare parts for your
-wagon. Here are the prices:
+It's a good idea to have a<br>
+few spare parts for your<br>
+wagon. Here are the prices:<br><br>
+  &nbsp;&nbsp;
+  wagon wheel  - $10 each<br>
+  &nbsp;&nbsp;
+  wagon axle   - $10 each<br>
+  &nbsp;&nbsp;
+  wagon tongue - $10 each<br><br>
 
-  wagon wheel  - $10 each
-  wagon axle   - $10 each
-  wagon tongue - $10 each
+Bill so far: $(bill)<br><br>
 
 How many wagon axles?
-
-Bill so far: $(value)
 __End
 
 .Mattspare3
-  Matt's General Store
-  Independence, Missouri
+  &nbsp;&nbsp;
+  Matt's General Store<br>
+  &nbsp;&nbsp;
+  Independence, Missouri<br><br>
 
-It's a good idea to have a
-few spare parts for your
-wagon. Here are the prices:
+It's a good idea to have a<br>
+few spare parts for your<br>
+wagon. Here are the prices:<br><br>
+  &nbsp;&nbsp;
+  wagon wheel  - $10 each<br>
+  &nbsp;&nbsp;
+  wagon axle   - $10 each<br>
+  &nbsp;&nbsp;
+  wagon tongue - $10 each<br><br>
 
-  wagon wheel  - $10 each
-  wagon axle   - $10 each
-  wagon tongue - $10 each
+Bill so far: $(bill)<br><br>
 
 How many wagon tongues?
-
-Bill so far: $(value)
 __End
 
 .Mattdone
-Well then, you're ready
-to start. Good luck!
-You have a long and
-difficult journey ahead
-of you.
+Well then, you're ready<br>
+to start. Good luck!<br>
+You have a long and<br>
+difficult journey ahead<br>
+of you.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Location
-(location) (center)
-(date) (center)
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br>
 
-Weather: (value)
-Health: (value)
-Pace: (value)
-Rations: (value)
+Weather: (weather)<br>
+Health: (health)<br>
+Pace: (pace)<br>
+Rations: (ration)<br><br>
 
-You may:
-  
-  1. Continue on trail
-  2. Check supplies
-  3. Change pace
-  4. Change food rations
-  5. Stop to rest
-  6. Attempt to trade
-  7. Talk to people
-  8. Buy supplies
+You May:
+  <br><br>
+  &nbsp;&nbsp;
+  1. Continue on trail<br>
+  &nbsp;&nbsp;
+  2. Check supplies<br>
+  &nbsp;&nbsp;
+  3. Change pace<br>
+  &nbsp;&nbsp;
+  4. Change food rations<br>
+  &nbsp;&nbsp;
+  5. Stop to rest<br>
+  &nbsp;&nbsp;
+  6. Attempt to trade<br>
+  &nbsp;&nbsp;
+  7. Talk to people<br>
+  &nbsp;&nbsp;
+  8. Buy supplies<br><br>
 
 What is your choice? 
 __End
 
 .Buy
-(location) (center)
-(date) (center)
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br>
 
 You may buy:
+  <br><br>
+  &nbsp;&nbsp;
+  1. Oxen          (oxenCost) per ox<br>
+  &nbsp;&nbsp;
+  2. Clothing      (clothCost) per set<br>
+  &nbsp;&nbsp;
+  3. Worms         (wormCost) per can<br>
+  &nbsp;&nbsp;
+  4. Wagon wheels  (wheelCost) per wheel<br>
+  &nbsp;&nbsp;
+  5. Wagon axles   (axleCost) per axle<br>
+  &nbsp;&nbsp;
+  6. Wagon tongues (tongueCost) per tongue<br>
+  &nbsp;&nbsp;
+  7. Food          (foodCost) per pound<br>
+  &nbsp;&nbsp;
+  8. Leave store<br><br>
 
-  1. Oxen          (value) per ox
-  2. Clothing      (value) per set
-  3. Worms         (value) per can
-  4. Wagon wheels  (value) per wheel
-  5. Wagon axles   (value) per axle
-  6. Wagon tongues (value) per tongue
-  7. Food          (value) per pound
-  8. Leave store
-
-You have $(value) to spend.
+You have $(money) to spend.<br>
 Which number?
 __End
 
 .Buy2
-(location) (center)
-(date) (center)
+&nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br>
 
 You may buy:
+  <br><br>
+  &nbsp;&nbsp;
+  1. Oxen          (oxenCost) per ox<br>
+  &nbsp;&nbsp;
+  2. Clothing      (clothCost) per set<br>
+  &nbsp;&nbsp;
+  3. Worms         (wormCost) per can<br>
+  &nbsp;&nbsp;
+  4. Wagon wheels  (wheelCost) per wheel<br>
+  &nbsp;&nbsp;
+  5. Wagon axles   (axleCost) per axle<br>
+  &nbsp;&nbsp;
+  6. Wagon tongues (tongueCost) per tongue<br>
+  &nbsp;&nbsp;
+  7. Food          (foodCost) per pound<br>
+  &nbsp;&nbsp;
+  8. Leave store<br><br>
 
-  1. Oxen          (value) per ox
-  2. Clothing      (value) per set
-  3. Worms         (value) per can
-  4. Wagon wheels  (value) per wheel
-  5. Wagon axles   (value) per axle
-  6. Wagon tongues (value) per tongue
-  7. Food          (value) per pound
-  8. Leave store
-
-You have $(value) to spend.
-Which number? (number)
+You have $(money) to spend.<br>
+Which number? (buyInput)<br><br>
 
 How many?
 __End
 
 .Trade
-Your Supplies (center)
+Your Supplies:<br><br>
 
-oxen             (value)
-sets of clothing (value)
-worms            (value)
-wagon wheels     (value)
-wagon axles      (value)
-wagon tongues    (value)
-pounds of food   (value)
+oxen:             (oxen)<br>
+sets of clothing: (clothes)<br>
+worms:            (worms)<br>
+wagon wheels:     (wheels)<br>
+wagon axles:      (axles)<br>
+wagon tongues:    (tongues)<br>
+pounds of food:   (food)<br><br>
 
-You meet another emigrant who
-wants (value). He will trade
-you (value).
+You meet another emigrant who<br>
+wants (randomExchange). He will trade<br>
+you (randomExchange2).<br><br>
 
 Are you willing to trade?
 __End
 
 .Ration
-Change food rations (center)
-(currently "(value)") (center)
+Change food rations<br>
+(currently "(ration)")<br><br>
 
-The amount of food the people in
-your party eat each day can
-change. These amounts are:
-
-  1. filling - meals are large and
-     generous.
-  
-  2. meager - meals are small, but
-     adequate.
-  
-  3. bare bones - meals are very
-     small; everyone stays hungry.
+The amount of food the people in<br>
+your party eat each day can<br>
+change. These amounts are:<br><br>
+  &nbsp;&nbsp;
+  1. filling - meals are large and<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     generous.<br><br>
+  &nbsp;&nbsp;
+  2. meager - meals are small, but<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     adequate.<br><br>
+  &nbsp;&nbsp;
+  3. bare bones - meals are very<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     small; everyone stays hungry.<br><br>
 
 what is your choice?
 __End
 
 .Pace
-Change pace (center)
-(currently "(value)") (center)
+Change pace<br>
+(currently "(pace)")<br><br>
 
-The pace at which you travel can change. Your choices are:
-
-  1. a steady pace
-  2. a strenuous pace
-  3. a grueling pace
-  4. find out what these
-     different paces mean
+The pace at which you travel can change. Your choices are:<br><br>
+  &nbsp;&nbsp;
+  1. a steady pace<br>
+  &nbsp;&nbsp;
+  2. a strenuous pace<br>
+  &nbsp;&nbsp;
+  3. a grueling pace<br>
+  &nbsp;&nbsp;
+  4. find out what these<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     different paces mean<br><br>
 
 What is your choice?
 __End
 
 .Pace2
-steady - You travel about 8 hours a
-day, taking frequent rests. You take
-care not to get too tired.
+steady - You travel about 8 hours a<br>
+day, taking frequent rests. You take<br>
+care not to get too tired.<br><br>
 
-strenuous - You travel about 12 hours
-a day, starting just after sunrise
-and stopping shortly before sunset.
-You stop to rest only when necessary.
-You finish each day feeling very
-tired.
+strenuous - You travel about 12 hours<br>
+a day, starting just after sunrise<br>
+and stopping shortly before sunset.<br>
+You stop to rest only when necessary.<br>
+You finish each day feeling very<br>
+tired.<br><br>
 
-grueling - You travel about 16 hours
-a day, staring before sunrise and
-continuing until dark. You almost
-never stop to rest. You do not get
-enough sleep at night. You finish
-each day feeling absolutely
-exhausted, and your health suffers.
+grueling - You travel about 16 hours<br>
+a day, staring before sunrise and<br>
+continuing until dark. You almost<br>
+never stop to rest. You do not get<br>
+enough sleep at night. You finish<br>
+each day feeling absolutely<br>
+exhausted, and your health suffers.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Supplies
-Your Suppiles (center)
+Your Supplies:<br><br>
 
-oxen             (value)
-sets of clothing (value)
-worms            (value)
-wagon wheels     (value)
-wagon axles      (value)
-wagon tongues    (value)
-pounds of food   (value)
-money left      $(value)
+oxen:             (oxen)<br>
+sets of clothing: (clothes)<br>
+worms:            (worms)<br>
+wagon wheels:     (wheels)<br>
+wagon axles:      (axles)<br>
+wagon tongues:    (tongues)<br>
+pounds of food:   (food)<br>
+money left:      $(money)<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Location2
-(location) (center)
-(date) (center)
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br>
 
-Weather: (value)
-Health: (value)
-Pace: (value)
-Rations: (value)
+Weather: (weather)<br>
+Health: (health)<br>
+Pace: (pace)<br>
+Rations: (ration)<br><br>
 
-You may:
-  
-  1. Continue on trail
-  2. Check supplies
-  3. Change pace
-  4. Change food rations
-  5. Stop to rest
-  6. Attempt to trade
-  7. Talk to people
+You May:
+  <br><br>
+  &nbsp;&nbsp;
+  1. Continue on trail<br>
+  &nbsp;&nbsp;
+  2. Check supplies<br>
+  &nbsp;&nbsp;
+  3. Change pace<br>
+  &nbsp;&nbsp;
+  4. Change food rations<br>
+  &nbsp;&nbsp;
+  5. Stop to rest<br>
+  &nbsp;&nbsp;
+  6. Attempt to trade<br>
+  &nbsp;&nbsp;
+  7. Talk to people<br><br>
 
 What is your choice? 
 __End
 
 .River
-(location) (center)
-(date) (center)
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br> 
 
-You must cross the river in
-order to continue. The
-river at this point is
-currently (value) feet across,
-and (value) feet deep in the
-middle.
+You must cross the river in<br>
+order to continue. The<br>
+river at this point is<br>
+currently (rivWid) feet across,<br>
+and (rivDep) feet deep in the<br>
+middle.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .River2
-(location) (center)
-(date) (center)
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br>
 
-Weather: (value)
-River width: (value) feet
-River depth: (value) feet
+Weather: (weather)<br>
+River width: (rivWid) feet<br>
+River depth: (rivDep) feet<br><br>
 
-You may:
+You may:<br><br>
 
-1. attempt to ford the river
-2. caulk the wagon and float it across
-3. take a ferry across
-4. wait to see if conditions improve
-5. get more information
+1. attempt to ford the river<br>
+2. caulk the wagon and float it across<br>
+3. take a ferry across<br>
+4. wait to see if conditions improve<br>
+5. get more information<br><br>
 
 What is your choice?
 __End
 
 .Riverinfo
-(location) (center)
-(date) (center)
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br> 
 
-To ford a river means to
-pull your wagon across a
-shallow part of the river,
-with the oxen still
-attached.
+To ford a river means to<br>
+pull your wagon across a<br>
+shallow part of the river,<br>
+with the oxen still<br>
+attached.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Riverinfo2
-(location) (center)
-(date) (center)
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br> 
 
-To caulk the wagon means to
-seal it so that no water can
-get in. The wagon can then
-be floated across like a
-boat.
+To caulk the wagon means to<br>
+seal it so that no water can<br>
+get in. The wagon can then<br>
+be floated across like a<br>
+boat.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Riverinfo3
-(location) (center)
-(date) (center)
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br> 
 
-To use a ferry means to put
-your wagon on top of a flat
-boat that belongs to someone
-else. The owner of the
-ferry will take your wagon
-across the river.
+To use a ferry means to put<br>
+your wagon on top of a flat<br>
+boat that belongs to someone<br>
+else. The owner of the<br>
+ferry will take your wagon<br>
+across the river.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Wait
-(location) (center)
-(date) (center)
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br> 
 
-You camp near the river for a day.
+You camp near the river for a day.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Ferry
-(location) (center)
-(date) (center)
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (departureMonth), (day), (year)<br><br> 
 
-The ferry operator says
-that he will charge you (value) and
-that you will have to wait (value)
-days. Are you willing to do
+The ferry operator says<br>
+that he will charge you (ferryCost) and<br>
+that you will have to wait (dayCost)<br>
+days. Are you willing to do<br>
 this?
 __End
 
 .Ontrail
-(date) (center)
+(departureMonth), (day), (year)<br><br>
 
-Weather: (value)
-Health: (value)
-Pace: (value)
-Rations: (value)
+Weather: (weather)<br>
+Health: (health)<br>
+Pace: (pace)<br>
+Rations: (ration)<br><br>
 
-You may:
-  
-  1. Continue on trail
-  2. Check supplies
-  3. Change pace
-  4. Change food rations
-  5. Stop to rest
-  6. Attempt to trade
-  7. Fish for food
+You May:
+  <br><br>
+  &nbsp;&nbsp;
+  1. Continue on trail<br>
+  &nbsp;&nbsp;
+  2. Check supplies<br>
+  &nbsp;&nbsp;
+  3. Change pace<br>
+  &nbsp;&nbsp;
+  4. Change food rations<br>
+  &nbsp;&nbsp;
+  5. Stop to rest<br>
+  &nbsp;&nbsp;
+  6. Attempt to trade<br>
+  &nbsp;&nbsp;
+  7. Fish for food<br><br>
 
 What is your choice? 
 __End
 
 .Fishingwin
-You caught a fish!
+You caught a fish!<br><br>
 
-The fish weighs (value)
-pounds and you carry it
-back to your wagon.
+The fish weighs (fishWeight)<br>
+pounds and you carry it<br>
+back to your wagon.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Fishingfail
-The worm is gone but so
-is the fish.
+The worm is gone but so<br>
+is the fish.<br><br>
 
 Try again?
 __End
 
 .Fishingend
-Your last worm is gone. You
-return back to the wagon.
+Your last worm is gone. You<br>
+return back to the wagon.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
 .Fishinglack
-You have no bait to fish
-with.
+You have no bait to fish<br>
+with.<br><br>
 
-Press ENTER to continue (center)
+Press ENTER to continue 
 __End
 
