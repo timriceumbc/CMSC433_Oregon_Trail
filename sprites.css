@@ -1,6 +1,6 @@
 .Locations {
 	background: url("Locations.png") no-repeat;
-	--location-scale-factor: 2;
+	--location-scale-factor: 3;
 }
 .People {
 	background: url("People.png") no-repeat;
