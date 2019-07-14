@@ -348,7 +348,7 @@ __End
   &nbsp;&nbsp;
   Independence, Missouri<br><br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 1. Oxen            $(oxenTotal)<br>
 2. Food            $(foodTotal)<br>
@@ -517,7 +517,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 Weather: (weather)<br>
 Health: (health)<br>
@@ -550,7 +550,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 You may buy:
   <br><br>
@@ -579,7 +579,7 @@ __End
 &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 You may buy:
   <br><br>
@@ -708,7 +708,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 Weather: (weather)<br>
 Health: (health)<br>
@@ -739,7 +739,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br> 
+  (month), (day), (year)<br><br> 
 
 You must cross the river in<br>
 order to continue. The<br>
@@ -755,7 +755,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 Weather: (weather)<br>
 River width: (rivWid) feet<br>
@@ -776,7 +776,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br> 
+  (month), (day), (year)<br><br> 
 
 To ford a river means to<br>
 pull your wagon across a<br>
@@ -791,7 +791,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br> 
+  (month), (day), (year)<br><br> 
 
 To caulk the wagon means to<br>
 seal it so that no water can<br>
@@ -806,7 +806,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br> 
+  (month), (day), (year)<br><br> 
 
 To use a ferry means to put<br>
 your wagon on top of a flat<br>
@@ -819,74 +819,86 @@ Press ENTER to continue
 __End
 
 .Wait
-(location) 
-(date) 
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (month), (day), (year)<br><br> 
 
-You camp near the river for a day.
+You camp near the river for a day.<br><br>
 
 Press ENTER to continue 
 __End
 
 .Ferry
-(location) 
-(date) 
+  &nbsp;&nbsp;
+  (location)<br>
+  &nbsp;&nbsp;
+  (month), (day), (year)<br><br> 
 
-The ferry operator says
-that he will charge you (value) and
-that you will have to wait (value)
-days. Are you willing to do
+The ferry operator says<br>
+that he will charge you (ferryCost) and<br>
+that you will have to wait (dayCost)<br>
+days. Are you willing to do<br>
 this?
 __End
 
 .Ontrail
-(date) 
+(month), (day), (year)<br><br>
 
-Weather: (value)
-Health: (value)
-Pace: (value)
-Rations: (value)
+Weather: (weather)<br>
+Health: (health)<br>
+Pace: (pace)<br>
+Rations: (ration)<br><br>
 
-You may:
-  
-  1. Continue on trail
-  2. Check supplies
-  3. Change pace
-  4. Change food rations
-  5. Stop to rest
-  6. Attempt to trade
-  7. Fish for food
+You May:
+  <br><br>
+  &nbsp;&nbsp;
+  1. Continue on trail<br>
+  &nbsp;&nbsp;
+  2. Check supplies<br>
+  &nbsp;&nbsp;
+  3. Change pace<br>
+  &nbsp;&nbsp;
+  4. Change food rations<br>
+  &nbsp;&nbsp;
+  5. Stop to rest<br>
+  &nbsp;&nbsp;
+  6. Attempt to trade<br>
+  &nbsp;&nbsp;
+  7. Fish for food<br><br>
 
 What is your choice? 
 __End
 
 .Fishingwin
-You caught a fish!
+You caught a fish!<br><br>
 
-The fish weighs (value)
-pounds and you carry it
-back to your wagon.
+The fish weighs (fishWeight)<br>
+pounds and you carry it<br>
+back to your wagon.<br><br>
 
 Press ENTER to continue 
 __End
 
 .Fishingfail
-The worm is gone but so
-is the fish.
+The worm is gone but so<br>
+is the fish.<br><br>
 
 Try again?
 __End
 
 .Fishingend
-Your last worm is gone. You
-return back to the wagon.
+Your last worm is gone. You<br>
+return back to the wagon.<br><br>
 
 Press ENTER to continue 
 __End
 
 .Fishinglack
-You have no bait to fish
-with.
+You have no bait to fish<br>
+with.<br><br>
 
 Press ENTER to continue 
 __End
+
 

@@ -901,3 +901,11 @@ with.<br><br>
 Press ENTER to continue 
 __End
 
+.Speak
+"I think we should continue<br>
+on our way"<br><br>
+
+Press ENTER to continue
+__End
+
+
