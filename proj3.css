@@ -23,3 +23,162 @@
 	left: 235px;
 	font-size: small;
 }
+#date {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 10px;
+	left: 490px;
+	text-align: center;
+}
+#weather {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 80px;
+	left: 490px;
+}
+#weatherVal {
+	width: 160px;
+	height: 60px;
+	position: absolute;
+	top: 80px;
+	left: 600px;
+	text-align: right;
+}
+#temp {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 110px;
+	left: 490px;
+}
+#tempVal {
+	width: 160px;
+	height: 60px;
+	position: absolute;
+	top: 110px;
+	left: 600px;
+	text-align: right;
+}
+#dist {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 210px;
+	left: 490px;
+	text-align: center;
+}
+#nextStop {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 250px;
+	left: 490px;
+}
+#nextStopVal {
+	width: 160px;
+	height: 60px;
+	position: absolute;
+	top: 250px;
+	left: 600px;
+	text-align: right;
+}
+#totalDist {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 275px;
+	left: 490px;
+}
+#totalDistVal {
+	width: 160px;
+	height: 60px;
+	position: absolute;
+	top: 275px;
+	left: 600px;
+	text-align: right;
+}
+#wagon {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 300px;
+	left: 490px;
+	text-align: center;
+}
+#food {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 340px;
+	left: 490px;
+}
+#foodVal {
+	width: 160px;
+	height: 60px;
+	position: absolute;
+	top: 340px;
+	left: 600px;
+	text-align: right;
+}
+#health {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 365px;
+	left: 490px;
+}
+#healthVal {
+	width: 160px;
+	height: 60px;
+	position: absolute;
+	top: 365px;
+	left: 600px;
+	text-align: right;
+}
+#ration {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 390px;
+	left: 490px;
+}
+#rationVal {
+	width: 160px;
+	height: 60px;
+	position: absolute;
+	top: 390px;
+	left: 600px;
+	text-align: right;
+}
+#pace {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 415px;
+	left: 490px;
+}
+#paceVal {
+	width: 160px;
+	height: 60px;
+	position: absolute;
+	top: 415px;
+	left: 600px;
+	text-align: right;
+}
+#status {
+	width: 260px;
+	height: 60px;
+	position: absolute;
+	top: 445px;
+	left: 490px;
+}
+#statusVal {
+	width: 160px;
+	height: 60px;
+	position: absolute;
+	top: 440px;
+	left: 600px;
+	text-align: right;
+}
