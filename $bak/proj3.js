@@ -74,6 +74,15 @@ function changeGameState(state){
 	stateText = valueSub(stateText);
 	document.getElementById("displayText").innerHTML = stateText;
 }
+function changeGameStatePpl(state){
+	gameState = state;
+	stateText = "";
+	var pattern = new RegExp(state + ".*?__End", "s");
+	stateText = pattern.exec(textFile)[0];
+	stateText = stateText.substr(state.length, stateText.length - 5 - state.length);
+	stateText = valueSub(stateText);
+	document.getElementById("peopleTxt").innerHTML = stateText;
+}
 
 function valueSub(stateText){
 	stateText = stateText.replace(/\(bill\)/, String(bill));
@@ -118,6 +127,16 @@ function valueSub(stateText){
 	stateText = stateText.replace(/\(rivDep\)/, String(rivDep));
 	stateText = stateText.replace(/\(ferryCost\)/, String(ferryCost));
 	stateText = stateText.replace(/\(dayCost\)/, String(dayCost));
+	stateText = stateText.replace(/\(fishWeight\)/, String(fishWeight));
+	stateText = stateText.replace(/\(peoplePoint\)/, String(peoplePoint));
+	stateText = stateText.replace(/\(wagonPoint\)/, String(wagonPoint));
+	stateText = stateText.replace(/\(oxenPoint\)/, String(oxenPoint));
+	stateText = stateText.replace(/\(partPoint\)/, String(partPoint));
+	stateText = stateText.replace(/\(clothPoint\)/, String(clothPoint));
+	stateText = stateText.replace(/\(wormPoint\)/, String(wormPoint));
+	stateText = stateText.replace(/\(foodPoint\)/, String(foodPoint));
+	stateText = stateText.replace(/\(moneyPoint\)/, String(moneyPoint));
+	stateText = stateText.replace(/\(points\)/, String(points));
 	return stateText;
 }
 
@@ -204,10 +223,11 @@ function processInput(input){
 		changeGameState("\\.Equipment2");
 	}
 	else if(gameState == "\\.Equipment2"){
-		changeGameState("\\.Equipment3");
+		document.getElementById("ms").className = "People p1";
+		changeGameStatePpl("\\.Equipment3");
 	}
 	else if(gameState == "\\.Equipment3"){
-		changeGameState("\\.Equipment4");
+		changeGameStatePpl("\\.Equipment4");
 	}
 	else if(gameState == "\\.Equipment4"){
 		changeGameState("\\.Store1");
