@@ -21,6 +21,8 @@ var wheels = 0;
 var axels = 0;
 var tongues = 0;
 var day = 1;
+var month = "";
+var year = "";
 var weather = "warm";
 var health = "good";
 var pace = "strenuous";
@@ -81,7 +83,6 @@ function valueSub(stateText){
 	stateText = stateText.replace(/\(party[1]\)/, String(party[1]));
 	stateText = stateText.replace(/\(party[2]\)/, String(party[2]));
 	stateText = stateText.replace(/\(party[3]\)/, String(party[3]));
-	stateText = stateText.replace(/\(party[4]\)/, String(party[4]));
 	stateText = stateText.replace(/\(money\)/, String(money));
 	stateText = stateText.replace(/\(month\)/, String(month));
 	stateText = stateText.replace(/\(day\)/, String(day));
@@ -281,5 +282,6 @@ $(document).ready(function(){
 	var myCanvas = document.createElement("canvas");
 	myCanvas.className = "UI";
 	document.body.appendChild(myCanvas);
-	document.getElementById("ms").className = "EventSnow2 snowLost";
+	document.getElementById("ms").className = "GameLogo";
+	loadDoc();
 })

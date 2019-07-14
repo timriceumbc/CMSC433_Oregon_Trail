@@ -935,4 +935,14 @@ Total: (points)<br><br>
 Press ENTER to continue
 __End
 
+.Toptenrecord
+You have accumulated (points) points.<br>
+Please enter your name to register<br>
+for the Oregon Top Ten!<br><br>
+__End
 
+.Toptenfail
+You have accumulated (points) points.<br>
+This is not enough to qualify for<br>
+the Oregon Top Ten.
+__End
