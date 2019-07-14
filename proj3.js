@@ -1,6 +1,6 @@
 var gameIterator = setInterval(iterateGame, 1000/60);
 var gameState = "";
-/*possible states: 
+/*possible states:
 	game not started = ""
 	"\\.Start"
 	...
@@ -35,7 +35,7 @@ class Person{
 	cholera = 0;
 	dysentery = 0;
 	name = "";
-	
+
 	constructor(name){
 		this.name = name;
 	}
@@ -280,5 +280,5 @@ $(document).ready(function(){
 	var myCanvas = document.createElement("canvas");
 	myCanvas.className = "UI";
 	document.body.appendChild(myCanvas);
-	document.getElementById("ms").className = "Locations indepen1";
+	document.getElementById("ms").className = "EventSnow2 snowLost";
 })

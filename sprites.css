@@ -21,25 +21,37 @@
 .People {
 	background: url("People.png") no-repeat;
 	position: absolute;
-	top: 20px;
-	left: 20px;
-	--people-scale-factor: 1;
+	top: 13px;
+	left: 12px;
+	--people-scale-factor: 1.2;
 }
 .Event {
 	background: url("Event.png") no-repeat;
-	--event-scale-factor: 1;
+	position: absolute;
+	top: 15px;
+	left: 40px;
+	--event-scale-factor: 1.3;
 }
 .Event2 {
 	background: url("Event2.png") no-repeat;
-	--event2-scale-factor: 1;
+	position: absolute;
+	top: 15px;
+	left: 40px;
+	--event2-scale-factor: 1.3;
 }
 .EventSnow {
 	background: url("EventSnow.png") no-repeat;
-	--eventsnow-scale-factor: 1;
+	position: absolute;
+	top: 15px;
+	left: 40px;
+	--eventsnow-scale-factor: 1.3;
 }
 .EventSnow2 {
 	background: url("EventSnow2.png") no-repeat;
-	--eventsnow2-scale-factor: 1;
+	position: absolute;
+	top: 15px;
+	left: 40px;
+	--eventsnow2-scale-factor: 1.3;
 }
 .snowFamilyLost {
 	width: calc(303px * var(--eventsnow2-scale-factor));
