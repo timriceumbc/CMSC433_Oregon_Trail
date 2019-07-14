@@ -275,3 +275,10 @@ function loadDoc() {
 }
 
 loadDoc();
+
+$(document).ready(function(){
+	var myCanvas = document.createElement("canvas");
+	myCanvas.className = "UI";
+	document.body.appendChild(myCanvas);
+	document.getElementById("ms").className = "Locations indepen1";
+})
