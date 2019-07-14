@@ -1,9 +1,28 @@
+.UI {
+	background: url("UI.png") no-repeat;
+	width: 766px;
+	height: 643px;
+	display: inline-block;
+}
+.mainScreen {
+	position: absolute;
+	top: 17px;
+	left: 13px;
+	width: 452px;
+	height: 299px;
+}
 .Locations {
 	background: url("Locations.png") no-repeat;
-	--location-scale-factor: 3;
+	position: absolute;
+	top: 17px;
+	left: 12px;
+	--location-scale-factor: 1.5;
 }
 .People {
 	background: url("People.png") no-repeat;
+	position: absolute;
+	top: 20px;
+	left: 20px;
 	--people-scale-factor: 1;
 }
 .Event {
