@@ -14,5 +14,13 @@
 	top: 0px;
 	left: 32px;
 	color: white;
-	font-size: 30px;
+	font-size: 25px;
+}
+
+#input {
+	width: 500px;
+	height: 20px;
+	position: absolute;
+	top: 600px;
+	left: 200px;
 }
