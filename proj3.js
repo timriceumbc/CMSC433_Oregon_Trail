@@ -1,6 +1,6 @@
 var gameIterator = setInterval(iterateGame, 1000/60);
 var gameState = "";
-/*possible states: 
+/*possible states:
 	game not started = ""
 	"\\.Start"
 	...
@@ -35,7 +35,7 @@ class Person{
 	cholera = 0;
 	dysentery = 0;
 	name = "";
-	
+
 	constructor(name){
 		this.name = name;
 	}

@@ -348,7 +348,7 @@ __End
   &nbsp;&nbsp;
   Independence, Missouri<br><br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 1. Oxen            $(oxenTotal)<br>
 2. Food            $(foodTotal)<br>
@@ -517,7 +517,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 Weather: (weather)<br>
 Health: (health)<br>
@@ -550,7 +550,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 You may buy:
   <br><br>
@@ -579,7 +579,7 @@ __End
 &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 You may buy:
   <br><br>
@@ -708,7 +708,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 Weather: (weather)<br>
 Health: (health)<br>
@@ -739,7 +739,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br> 
+  (month), (day), (year)<br><br> 
 
 You must cross the river in<br>
 order to continue. The<br>
@@ -755,7 +755,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br>
+  (month), (day), (year)<br><br>
 
 Weather: (weather)<br>
 River width: (rivWid) feet<br>
@@ -776,7 +776,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br> 
+  (month), (day), (year)<br><br> 
 
 To ford a river means to<br>
 pull your wagon across a<br>
@@ -791,7 +791,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br> 
+  (month), (day), (year)<br><br> 
 
 To caulk the wagon means to<br>
 seal it so that no water can<br>
@@ -806,7 +806,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br> 
+  (month), (day), (year)<br><br> 
 
 To use a ferry means to put<br>
 your wagon on top of a flat<br>
@@ -822,7 +822,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br> 
+  (month), (day), (year)<br><br> 
 
 You camp near the river for a day.<br><br>
 
@@ -833,7 +833,7 @@ __End
   &nbsp;&nbsp;
   (location)<br>
   &nbsp;&nbsp;
-  (departureMonth), (day), (year)<br><br> 
+  (month), (day), (year)<br><br> 
 
 The ferry operator says<br>
 that he will charge you (ferryCost) and<br>
@@ -843,7 +843,7 @@ this?
 __End
 
 .Ontrail
-(departureMonth), (day), (year)<br><br>
+(month), (day), (year)<br><br>
 
 Weather: (weather)<br>
 Health: (health)<br>
@@ -900,4 +900,12 @@ with.<br><br>
 
 Press ENTER to continue 
 __End
+
+.Speak
+"I think we should continue<br>
+on our way"<br><br>
+
+Press ENTER to continue
+__End
+
 
