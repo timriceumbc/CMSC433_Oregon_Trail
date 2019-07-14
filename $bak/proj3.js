@@ -21,8 +21,6 @@ var wheels = 0;
 var axels = 0;
 var tongues = 0;
 var day = 1;
-var month = "";
-var year = "";
 var weather = "warm";
 var health = "good";
 var pace = "strenuous";
@@ -83,6 +81,7 @@ function valueSub(stateText){
 	stateText = stateText.replace(/\(party[1]\)/, String(party[1]));
 	stateText = stateText.replace(/\(party[2]\)/, String(party[2]));
 	stateText = stateText.replace(/\(party[3]\)/, String(party[3]));
+	stateText = stateText.replace(/\(party[4]\)/, String(party[4]));
 	stateText = stateText.replace(/\(money\)/, String(money));
 	stateText = stateText.replace(/\(month\)/, String(month));
 	stateText = stateText.replace(/\(day\)/, String(day));
@@ -91,6 +90,34 @@ function valueSub(stateText){
 	stateText = stateText.replace(/\(health\)/, String(health));
 	stateText = stateText.replace(/\(pace\)/, String(pace));
 	stateText = stateText.replace(/\(ration\)/, String(ration));
+	stateText = stateText.replace(/\(oxenTotal\)/, String(oxenTotal));
+	stateText = stateText.replace(/\(foodTotal\)/, String(foodTotal));
+	stateText = stateText.replace(/\(clothTotal\)/, String(clothTotal));
+	stateText = stateText.replace(/\(wormTotal\)/, String(wormTotal));
+	stateText = stateText.replace(/\(spareTotal\)/, String(spareTotal));
+	stateText = stateText.replace(/\(people\)/, String(partyLength));
+	stateText = stateText.replace(/\(location\)/, String(location));
+	stateText = stateText.replace(/\(oxenCost\)/, String(oxenCost));
+	stateText = stateText.replace(/\(clothCost\)/, String(clothCost));
+	stateText = stateText.replace(/\(wormCost\)/, String(wormCost));
+	stateText = stateText.replace(/\(wheelCost\)/, String(wheelCost));
+	stateText = stateText.replace(/\(axleCost\)/, String(axleCost));
+	stateText = stateText.replace(/\(tongueCost\)/, String(tongueCost));
+	stateText = stateText.replace(/\(foodCost\)/, String(foodCost));
+	stateText = stateText.replace(/\(buyInput\)/, String(buyInput));
+	stateText = stateText.replace(/\(oxen\)/, String(oxen));
+	stateText = stateText.replace(/\(clothes\)/, String(clothes));
+	stateText = stateText.replace(/\(worms\)/, String(worms));
+	stateText = stateText.replace(/\(wheels\)/, String(wheels));
+	stateText = stateText.replace(/\(axles\)/, String(axels));
+	stateText = stateText.replace(/\(tongues\)/, String(tongues));
+	stateText = stateText.replace(/\(food\)/, String(food));
+	stateText = stateText.replace(/\(randomExchange\)/, String(randomExchange));
+	stateText = stateText.replace(/\(randomExchange2\)/, String(randomExchange2));
+	stateText = stateText.replace(/\(rivWid\)/, String(rivWid));
+	stateText = stateText.replace(/\(rivDep\)/, String(rivDep));
+	stateText = stateText.replace(/\(ferryCost\)/, String(ferryCost));
+	stateText = stateText.replace(/\(dayCost\)/, String(dayCost));
 	return stateText;
 }
 
@@ -282,6 +309,5 @@ $(document).ready(function(){
 	var myCanvas = document.createElement("canvas");
 	myCanvas.className = "UI";
 	document.body.appendChild(myCanvas);
-	document.getElementById("ms").className = "GameLogo";
-	loadDoc();
+	document.getElementById("ms").className = "EventSnow2 snowLost";
 })
