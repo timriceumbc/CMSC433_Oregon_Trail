@@ -1,0 +1,18 @@
+Independence->Kansas River Crossing;102
+Kansas River crossing->Big Blue River crossing;83
+Big Blue River crossing->Fort Kearney;119
+Fort Kearney->Chimney Rock;250
+Chimney Rock->Fort Laramie;86
+Fort Laramie->Independence Rock;190
+Independence Rock->South Pass;102
+South Pass->Green River crossing;57
+South Pass->Fort Bridger;125
+Green River crossing->Soda Springs;143
+Fort Bridger->Soda Springs;162
+Soda Springs->Fort Hall;57
+Fort Hall->Snake River crossing;182
+Snake River crossing->Fort Boise;113
+Fort Boise->Blue Mountains;160
+Blue Mountains->Fort Walla Walla;55
+Blue Mountains->??;??
+Fort Walla Walla->Dalles;120

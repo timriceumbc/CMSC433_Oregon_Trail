@@ -1,3 +1,6 @@
+.Blank
+__End
+
 .Start
 You May:
   <br><br>
@@ -384,8 +387,8 @@ __End
   Independence, Missouri<br><br>
 
 There are 2 oxen in a yoke;<br>
-I recommend at least 3 yoke.<br>
-I charge $40 a yoke.<br><br>
+Matt recommends at least 3 yoke.<br>
+He charges $40 a yoke.<br><br>
 
 Bill so far: $(bill)<br><br>
 
@@ -399,13 +402,13 @@ __End
   &nbsp;&nbsp;
   Independence, Missouri<br><br>
 
-I recommend you take at<br>
+Matt recommends you take at<br>
 least 200 pounds of food<br>
 for each person in your<br>
-family. I see that you have<br>
+family. He sees that you have<br>
 (people) people in all. You'll need<br>
 flour, sugar, bacon, and<br>
-coffee. My price is 20<br>
+coffee. His price is 20<br>
 cents a pound.<br><br>
 
 Bill so far: $(bill)<br><br>
@@ -421,7 +424,7 @@ __End
   Independence, Missouri<br><br>
 
 You'll need warm clothing in<br>
-the mountains. I recommend<br>
+the mountains. Matt recommends<br>
 taking at least 2 sets of<br>
 clothes per person.<br>
 Each set is $10.00.<br><br>
@@ -438,7 +441,7 @@ __End
   &nbsp;&nbsp;
   Independence, Missouri<br><br>
 
-I sell worms in cans<br>
+Matt sells worms in cans<br>
 of 20 worms. Each can<br>
 costs $2.00.<br><br>
 
@@ -512,11 +515,11 @@ How many wagon tongues?
 __End
 
 .Mattdone
-Well then, you're ready<br>
+"Well then, you're ready<br>
 to start. Good luck!<br>
 You have a long and<br>
 difficult journey ahead<br>
-of you.<br><br>
+of you."<br><br>
 
 Press ENTER to continue 
 __End

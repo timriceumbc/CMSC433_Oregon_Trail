@@ -35,7 +35,7 @@ var	clothTotal = 0;
 var	wormTotal = 0;
 var	spareTotal = 0;
 var	partyLength = 0;
-var	location = "Independence";
+var	loc = "Independence";
 var	oxenCost = 0;
 var	clothCost = 0;
 var	wormCost = 0;
@@ -138,7 +138,7 @@ function valueSub(stateText){
 	stateText = stateText.replace(/\(wormTotal\)/, String(wormTotal));
 	stateText = stateText.replace(/\(spareTotal\)/, String(spareTotal));
 	stateText = stateText.replace(/\(people\)/, String(partyLength));
-	stateText = stateText.replace(/\(location\)/, String(location));
+	stateText = stateText.replace(/\(location\)/, String(loc));
 	stateText = stateText.replace(/\(oxenCost\)/, String(oxenCost));
 	stateText = stateText.replace(/\(clothCost\)/, String(clothCost));
 	stateText = stateText.replace(/\(wormCost\)/, String(wormCost));
