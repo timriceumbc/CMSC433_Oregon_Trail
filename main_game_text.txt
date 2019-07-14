@@ -1,3 +1,6 @@
+.Blank
+__End
+
 .Start
 You May:
   <br><br>
@@ -277,14 +280,18 @@ You attend a public meeting held<br>
 for "folks with the California -<br>
 Oregon fever." You're told:<br><br>
 
-If you leave too early, there<br>
+Press ENTER to continue 
+__End
+
+.SpeechAdv
+"If you leave too early, there<br>
 won't be any grass for your<br>
 oxen to eat. If you leave too<br>
 late, you may not get to Oregon<br>
 before winter comes. If you<br>
 leave at just the right time,<br>
 there will be green grass and<br>
-the weather will still be cool.<br><br>
+the weather will still be cool."<br><br>
 
 Press ENTER to continue 
 __End
@@ -340,6 +347,10 @@ what you need:<br><br>
     wagon<br><br>
 
 Press ENTER to continue 
+__End
+
+.Mattask
+"So, what ya need?"
 __End
 
 .Store1
