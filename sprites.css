@@ -4,6 +4,14 @@
 	height: 643px;
 	display: inline-block;
 }
+.GameLogo {
+	background: url("GameLogo.png") no-repeat;
+	width: 450px;
+	height: 298px;
+	position: absolute;
+	top: 17px;
+	left: 14px;
+}
 .mainScreen {
 	position: absolute;
 	top: 17px;

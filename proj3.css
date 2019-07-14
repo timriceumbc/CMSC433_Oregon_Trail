@@ -1,26 +1,17 @@
 .textBox {
-	width: 904px;
-	height: 586px;
+	width: 452px;
+	height: 325px;
 	position: absolute;
-	top: 8px;
-	left: 8px;
+	top: 305px;
+	left: 12px;
 	background-color: black;
-}
-
-#displayText {
-	width: 904px;
-	height: 586px;
-	position: absolute;
-	top: 0px;
-	left: 32px;
 	color: white;
-	font-size: 25px;
 }
-
 #input {
-	width: 500px;
+	width: 100px;
 	height: 20px;
 	position: absolute;
 	top: 600px;
 	left: 200px;
+	z-index: 2;
 }
