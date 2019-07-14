@@ -90,11 +90,29 @@ function textBoxInvisible(){
 	document.getElementById("textbg").style.height = "0px";
 }
 
+// Travel Logic
 function iterateGame(){
 	console.log("iterate");
 	distance += 10;
 	var display = "distance: " + distance;
 	document.getElementById("displayText").innerHTML = display;
+	
+	// Sickness Logic
+	for (var i = 0; i < party.length; i++){
+		if(Math.random() < .005)
+			party[i].measles = 100;
+		if(Math.random() < .005)
+			party[i].snakebite = 100;
+		if(Math.random() < .005)
+			party[i].exhaustion = 100;
+		if(Math.random() < .005)
+			party[i].typhoid = 100;
+		if(Math.random() < .005)
+			party[i].cholera = 100;
+		if(Math.random() < .005)
+			party[i].dysentery = 100;
+	}
+	console.log(party);
 }
 
 function calcBill(){
@@ -112,6 +130,7 @@ function changeGameState(state){
 	stateText = valueSub(stateText);
 	document.getElementById("displayText").innerHTML = stateText;
 }
+
 function changeGameStatePpl(state){
 	gameState = state;
 	stateText = "";
@@ -125,10 +144,14 @@ function changeGameStatePpl(state){
 function valueSub(stateText){
 	stateText = stateText.replace(/\(bill\)/, String(bill));
 	stateText = stateText.replace(/\(playerName\)/, String(playerName));
-	stateText = stateText.replace(/\(party[1]\)/, String(party[1]));
-	stateText = stateText.replace(/\(party[2]\)/, String(party[2]));
-	stateText = stateText.replace(/\(party[3]\)/, String(party[3]));
-	stateText = stateText.replace(/\(party[4]\)/, String(party[4]));
+	if(party[1] != null)
+		stateText = stateText.replace(/\(party\[1\]\)/, String(party[1].name));
+	if(party[2] != null)
+		stateText = stateText.replace(/\(party\[2\]\)/, String(party[2].name));
+	if(party[3] != null)
+		stateText = stateText.replace(/\(party\[3\]\)/, String(party[3].name));
+	if(party[4] != null)
+		stateText = stateText.replace(/\(party\[4\]\)/, String(party[4].name));
 	stateText = stateText.replace(/\(money\)/, String(money));
 	stateText = stateText.replace(/\(month\)/, String(month));
 	stateText = stateText.replace(/\(day\)/, String(day));
@@ -218,16 +241,27 @@ function processInput(input){
 		changeGameState("\\.Party");
 	}
 	else if(gameState == "\\.Party"){
-		if(party.length <= 3){
-			party.push(new Person(input));
-			changeGameState("\\.Party");
-			console.log(party)
-		}
-		else if(party.length == 4){
-			party.push(new Person(input));
-			changeGameState("\\.Leave");
-			console.log(party)
-		}
+		party.push(new Person(input));
+		changeGameState("\\.Party2");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party2"){
+		party.push(new Person(input));
+		changeGameState("\\.Party3");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party3"){
+		party.push(new Person(input));
+		changeGameState("\\.Party4");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party4"){
+		party.push(new Person(input));
+		changeGameState("\\.Party5");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party5"){
+		changeGameState("\\.Leave");
 	}
 	else if(gameState == "\\.Leave"){
 		if(input == "1"){
@@ -377,4 +411,4 @@ $(document).ready(function(){
 	document.body.appendChild(myCanvas);
 	document.getElementById("ms").className = "GameLogo";
 	loadDoc();
-})
+});
