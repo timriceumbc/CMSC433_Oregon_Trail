@@ -1,8 +1,9 @@
-var gameIterator = setInterval(iterateGame, 1000/60);
+var gameIterator;
 var gameState = "";
 /*possible states:
 	game not started = ""
 	"\\.Start"
+	"\\.Travel"
 	...
 */
 var playerName = "";
@@ -59,6 +60,7 @@ var	wormPoint = 0;
 var	foodPoint = 0;
 var	moneyPoint = 0;
 var	points = 0;
+var distance = 0;
 
 class Person{
 	measles = 0;
@@ -89,7 +91,10 @@ function textBoxInvisible(){
 }
 
 function iterateGame(){
-	//console.log("iterate");
+	console.log("iterate");
+	distance += 10;
+	var display = "distance: " + distance;
+	document.getElementById("displayText").innerHTML = display;
 }
 
 function calcBill(){
@@ -337,10 +342,18 @@ function processInput(input){
 	}
 	else if(gameState == "\\.Mattdone"){
 		if(Number(input) >= 0){
-			wheels = Number(input);
-			calcBill();
 			changeGameState("\\.Location");
 		}
+	}
+	else if(gameState == "\\.Location"){
+		if(input == "1"){
+			changeGameState("\\.Travel");
+			gameIterator = setInterval(iterateGame, 1000/2);
+		}
+	}
+	else if(gameState == "\\.Travel"){
+		changeGameState("\\.Location");
+		clearInterval(gameIterator);
 	}
 }
 
