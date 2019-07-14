@@ -21,6 +21,8 @@ var wheels = 0;
 var axels = 0;
 var tongues = 0;
 var day = 1;
+var month = "";
+var year = "";
 var weather = "warm";
 var health = "good";
 var pace = "strenuous";
@@ -360,5 +362,6 @@ $(document).ready(function(){
 	var myCanvas = document.createElement("canvas");
 	myCanvas.className = "UI";
 	document.body.appendChild(myCanvas);
-	document.getElementById("ms").className = "EventSnow2 snowLost";
+	document.getElementById("ms").className = "GameLogo";
+	loadDoc();
 })
