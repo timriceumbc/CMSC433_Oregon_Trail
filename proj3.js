@@ -76,6 +76,15 @@ function changeGameState(state){
 	stateText = valueSub(stateText);
 	document.getElementById("displayText").innerHTML = stateText;
 }
+function changeGameStatePpl(state){
+	gameState = state;
+	stateText = "";
+	var pattern = new RegExp(state + ".*?__End", "s");
+	stateText = pattern.exec(textFile)[0];
+	stateText = stateText.substr(state.length, stateText.length - 5 - state.length);
+	stateText = valueSub(stateText);
+	document.getElementById("peopleTxt").innerHTML = stateText;
+}
 
 function valueSub(stateText){
 	stateText = stateText.replace(/\(bill\)/, String(bill));
@@ -177,10 +186,11 @@ function processInput(input){
 		changeGameState("\\.Equipment2");
 	}
 	else if(gameState == "\\.Equipment2"){
-		changeGameState("\\.Equipment3");
+		document.getElementById("ms").className = "People p1";
+		changeGameStatePpl("\\.Equipment3");
 	}
 	else if(gameState == "\\.Equipment3"){
-		changeGameState("\\.Equipment4");
+		changeGameStatePpl("\\.Equipment4");
 	}
 	else if(gameState == "\\.Equipment4"){
 		changeGameState("\\.Store1");

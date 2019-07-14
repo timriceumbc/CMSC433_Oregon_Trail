@@ -15,3 +15,11 @@
 	left: 200px;
 	z-index: 2;
 }
+#peopleTxt {
+	width: 160px;
+	height: 260px;
+	position: absolute;
+	top: 20px;
+	left: 235px;
+	font-size: small;
+}
