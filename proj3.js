@@ -20,6 +20,12 @@ var worms = 0;
 var wheels = 0;
 var axels = 0;
 var tongues = 0;
+var day = 1;
+var weather = "warm";
+var health = "good";
+var pace = "strenuous";
+var ration = "meager";
+var fishWeight = 0;
 
 class Person{
 	measles = 0;
@@ -65,7 +71,25 @@ function changeGameState(state){
 	var pattern = new RegExp(state + ".*?__End", "s");
 	stateText = pattern.exec(textFile)[0];
 	stateText = stateText.substr(state.length, stateText.length - 5 - state.length);
+	stateText = valueSub(stateText);
 	document.getElementById("displayText").innerHTML = stateText;
+}
+
+function valueSub(stateText){
+	stateText = stateText.replace(/\(bill\)/, String(bill));
+	stateText = stateText.replace(/\(playerName\)/, String(playerName));
+	stateText = stateText.replace(/\(party[1]\)/, String(party[1]));
+	stateText = stateText.replace(/\(party[2]\)/, String(party[2]));
+	stateText = stateText.replace(/\(party[3]\)/, String(party[3]));
+	stateText = stateText.replace(/\(money\)/, String(money));
+	stateText = stateText.replace(/\(month\)/, String(month));
+	stateText = stateText.replace(/\(day\)/, String(day));
+	stateText = stateText.replace(/\(year\)/, String(year));
+	stateText = stateText.replace(/\(weather\)/, String(weather));
+	stateText = stateText.replace(/\(health\)/, String(health));
+	stateText = stateText.replace(/\(pace\)/, String(pace));
+	stateText = stateText.replace(/\(ration\)/, String(ration));
+	return stateText;
 }
 
 function keyDown(){
@@ -104,6 +128,7 @@ function processInput(input){
 	}
 	else if(gameState == "\\.Chosen"){
 		party.push(new Person(input));
+		playerName = input;
 		changeGameState("\\.Party");
 	}
 	else if(gameState == "\\.Party"){
