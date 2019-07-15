@@ -35,15 +35,14 @@ var foodTotal = 0;
 var	clothTotal = 0;
 var	wormTotal = 0;
 var	spareTotal = 0;
-var	partyLength = 0;
 var	loc = "Independence";
-var	oxenCost = 0;
-var	clothCost = 0;
-var	wormCost = 0;
-var	wheelCost = 0;
-var	axleCost = 0;
-var	tongueCost = 0;
-var	foodCost = 0;
+var	oxenCost = 20;
+var	foodCost = .2;
+var	clothCost = 10;
+var	wormCost = .1;
+var	wheelCost = 10;
+var	axleCost = 10;
+var	tongueCost = 10;
 var buyInput = 0;
 var	randomExchange = 0;
 var	randomExchange2 = 0;
@@ -61,6 +60,7 @@ var	foodPoint = 0;
 var	moneyPoint = 0;
 var	points = 0;
 var distance = 0;
+var dests = "";
 
 class Person{
 	measles = 0;
@@ -90,28 +90,64 @@ function textBoxInvisible(){
 	document.getElementById("textbg").style.height = "0px";
 }
 
+// Travel Logic
 function iterateGame(){
 	console.log("iterate");
-	distance += 10;
+	distance += 50;
 	var display = "distance: " + distance;
 	document.getElementById("displayText").innerHTML = display;
+	
+	// Sickness Logic
+	for (var i = 0; i < party.length; i++){
+		if(Math.random() < .005)
+			party[i].measles = 100;
+		if(Math.random() < .005)
+			party[i].snakebite = 100;
+		if(Math.random() < .005)
+			party[i].exhaustion = 100;
+		if(Math.random() < .005)
+			party[i].typhoid = 100;
+		if(Math.random() < .005)
+			party[i].cholera = 100;
+		if(Math.random() < .005)
+			party[i].dysentery = 100;
+	}
+	console.log(party);
+	
+	// Destination Logic
+	if(distance >= 2000){
+		changeGameState("\\.Scoring")
+		// TO DO Calculate score
+	}
 }
 
 function calcBill(){
-	bill = (oxen * 20) + (food * .2) + (clothes * 10) + (worms * .1) + (wheels * 10)
-	+ (axels * 10) + (tongues * 10);
+	oxenTotal = oxen * oxenCost;
+	foodTotal = food * foodCost;
+	clothTotal = clothes * clothCost;
+	wormTotal = worms * wormCost;
+	wheelTotal = wheels * wheelCost;
+	axleTotal = axels * axleCost;
+	tongueTotal = tongues * tongueCost;
+
+	spareTotal = wheelTotal + axleTotal + tongueTotal;
+
+	bill = oxenTotal + foodTotal + clothTotal + wormTotal + wheelTotal + axleTotal + tongueTotal;
 	console.log("bill: " + bill);
 }
 
 function changeGameState(state){
 	gameState = state;
 	stateText = "";
-	var pattern = new RegExp(state + ".*?__End", "s");
-	stateText = pattern.exec(textFile)[0];
-	stateText = stateText.substr(state.length, stateText.length - 5 - state.length);
-	stateText = valueSub(stateText);
+	if(state.substr(0,2) == "\\."){
+		var pattern = new RegExp(state + ".*?__End", "s");
+		stateText = pattern.exec(textFile)[0];
+		stateText = stateText.substr(state.length, stateText.length - 5 - state.length);
+		stateText = valueSub(stateText);
+	}
 	document.getElementById("displayText").innerHTML = stateText;
 }
+
 function changeGameStatePpl(state){
 	gameState = state;
 	stateText = "";
@@ -125,10 +161,14 @@ function changeGameStatePpl(state){
 function valueSub(stateText){
 	stateText = stateText.replace(/\(bill\)/, String(bill));
 	stateText = stateText.replace(/\(playerName\)/, String(playerName));
-	stateText = stateText.replace(/\(party[1]\)/, String(party[1]));
-	stateText = stateText.replace(/\(party[2]\)/, String(party[2]));
-	stateText = stateText.replace(/\(party[3]\)/, String(party[3]));
-	stateText = stateText.replace(/\(party[4]\)/, String(party[4]));
+	if(party[1] != null)
+		stateText = stateText.replace(/\(party\[1\]\)/, String(party[1].name));
+	if(party[2] != null)
+		stateText = stateText.replace(/\(party\[2\]\)/, String(party[2].name));
+	if(party[3] != null)
+		stateText = stateText.replace(/\(party\[3\]\)/, String(party[3].name));
+	if(party[4] != null)
+		stateText = stateText.replace(/\(party\[4\]\)/, String(party[4].name));
 	stateText = stateText.replace(/\(money\)/, String(money));
 	stateText = stateText.replace(/\(month\)/, String(month));
 	stateText = stateText.replace(/\(day\)/, String(day));
@@ -142,7 +182,7 @@ function valueSub(stateText){
 	stateText = stateText.replace(/\(clothTotal\)/, String(clothTotal));
 	stateText = stateText.replace(/\(wormTotal\)/, String(wormTotal));
 	stateText = stateText.replace(/\(spareTotal\)/, String(spareTotal));
-	stateText = stateText.replace(/\(people\)/, String(partyLength));
+	stateText = stateText.replace(/\(people\)/, String(party.length));
 	stateText = stateText.replace(/\(location\)/, String(loc));
 	stateText = stateText.replace(/\(oxenCost\)/, String(oxenCost));
 	stateText = stateText.replace(/\(clothCost\)/, String(clothCost));
@@ -195,14 +235,17 @@ function processInput(input){
 	else if(gameState == "\\.Travel"){
 		if(input == "1"){
 			occupation = "banker";
+			money = 1800;
 			changeGameState("\\.Chosen");
 		}
 		else if(input == "2"){
 			occupation = "carpenter";
+			money = 1200;
 			changeGameState("\\.Chosen");
 		}
 		else if(input == "3"){
 			occupation = "farmer";
+			money = 600;
 			changeGameState("\\.Chosen");
 		}
 		else if(input == "4"){
@@ -218,16 +261,27 @@ function processInput(input){
 		changeGameState("\\.Party");
 	}
 	else if(gameState == "\\.Party"){
-		if(party.length <= 3){
-			party.push(new Person(input));
-			changeGameState("\\.Party");
-			console.log(party)
-		}
-		else if(party.length == 4){
-			party.push(new Person(input));
-			changeGameState("\\.Leave");
-			console.log(party)
-		}
+		party.push(new Person(input));
+		changeGameState("\\.Party2");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party2"){
+		party.push(new Person(input));
+		changeGameState("\\.Party3");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party3"){
+		party.push(new Person(input));
+		changeGameState("\\.Party4");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party4"){
+		party.push(new Person(input));
+		changeGameState("\\.Party5");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party5"){
+		changeGameState("\\.Leave");
 	}
 	else if(gameState == "\\.Leave"){
 		if(input == "1"){
@@ -287,7 +341,8 @@ function processInput(input){
 		else if(input == "5"){
 			changeGameState("\\.Mattspare");
 		}
-		else if(input == ""){
+		else if(input == "" && bill <= money){
+			money -= bill;
 			changeGameState("\\.Mattdone");
 		}
 	}
@@ -341,17 +396,15 @@ function processInput(input){
 		}
 	}
 	else if(gameState == "\\.Mattdone"){
-		if(Number(input) >= 0){
-			changeGameState("\\.Location");
-		}
+		changeGameState("\\.Location");
 	}
 	else if(gameState == "\\.Location"){
 		if(input == "1"){
-			changeGameState("\\.Travel");
+			changeGameState("Travel");
 			gameIterator = setInterval(iterateGame, 1000/2);
 		}
 	}
-	else if(gameState == "\\.Travel"){
+	else if(gameState == "Travel"){
 		changeGameState("\\.Location");
 		clearInterval(gameIterator);
 	}
@@ -367,6 +420,16 @@ function loadDoc() {
 	};
 	xhttp.open("POST", "main_game_text.txt", true);
 	xhttp.send();
+	
+	var xhttp2 = new XMLHttpRequest();
+	xhttp2.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			dests = JSON.parse(this.responseText);
+		}
+	};
+	xhttp2.open("POST", "dest.txt", true);
+	xhttp2.send();
+	
 }
 
 loadDoc();
@@ -377,4 +440,4 @@ $(document).ready(function(){
 	document.body.appendChild(myCanvas);
 	document.getElementById("ms").className = "GameLogo";
 	loadDoc();
-})
+});
