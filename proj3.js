@@ -3,7 +3,7 @@ var gameState = "";
 /*possible states:
 	game not started = ""
 	"\\.Start"
-	"\\.Travel"
+	"Travel"
 	...
 */
 var myJSON = '{"0":["Independence","Kansas River Crossing",102],"1":["Kansas River crossing","Big Blue River crossing",83],"2":["Big Blue River crossing","Fort Kearney",119],"3":["Fort Kearney","Chimney Rock",250],"4":["Chimney Rock","Fort Laramie",86],"5":["Fort Laramie","Independence Rock",190],"6":["Independence Rock","South Pass",102],"7":["South Pass","Green River crossing",57],"8":["South Pass","Fort Bridger",125],"9":["Green River crossing","Soda Springs",143],"10":["Fort Bridger","Soda Springs",162],"11":["Soda Springs","Fort Hall",57],"12":["Fort Hall","Snake River crossing",182],"13":["Snake River crossing","Fort Boise",113],"14":["Fort Boise","Blue Mountains",160],"15":["Blue Mountains","Fort Walla Walla",55],"16":["Blue Mountains","The Dalles",125],"17":["Fort Walla Walla","The Dalles",120],"18":["The Dalles","Willemette Valley",100]}';
@@ -11,7 +11,6 @@ var locJSON = JSON.parse(myJSON);
 var playerName = "";
 var occupation = "";
 var textFile = "";
-var stateText = "";
 var party = [];
 var departureMonth = "";
 var money = 0;
@@ -63,6 +62,8 @@ var	moneyPoint = 0;
 var	points = 0;
 var distance = 0;
 var dests = "";
+var nextDestDist = locJSON[0][2];
+var locNum = 0;
 
 class Person{
 	measles = 0;
@@ -95,7 +96,7 @@ function textBoxInvisible(){
 // Travel Logic
 function iterateGame(){
 	console.log("iterate");
-	distance += 50;
+	distance += 10;
 	var display = "distance: " + distance;
 	document.getElementById("displayText").innerHTML = display;
 	
@@ -121,6 +122,20 @@ function iterateGame(){
 		changeGameState("\\.Scoring")
 		// TO DO Calculate score
 	}
+	else if(distance >= nextDestDist){
+		locNum++;
+		loc = locJSON[locNum][0];
+		console.log("locNum: " + locNum);
+		console.log("loc: " + loc);
+		nextDestDist += locJSON[locNum][2];
+		clearInterval(gameIterator);
+		updateTopScreenLocation();
+		changeGameState("\\.Location")
+	}
+}
+
+function updateTopScreenLocation(){
+	document.getElementById("ms").className = "Locations indepen1";
 }
 
 function calcBill(){
@@ -140,7 +155,7 @@ function calcBill(){
 
 function changeGameState(state){
 	gameState = state;
-	stateText = "";
+	var stateText = "";
 	if(state.substr(0,2) == "\\."){
 		var pattern = new RegExp(state + ".*?__End", "s");
 		stateText = pattern.exec(textFile)[0];
@@ -148,11 +163,12 @@ function changeGameState(state){
 		stateText = valueSub(stateText);
 	}
 	document.getElementById("displayText").innerHTML = stateText;
+	document.getElementById("peopleTxt").innerHTML = "";
 }
 
 function changeGameStatePpl(state){
 	gameState = state;
-	stateText = "";
+	var stateText = "";
 	var pattern = new RegExp(state + ".*?__End", "s");
 	stateText = pattern.exec(textFile)[0];
 	stateText = stateText.substr(state.length, stateText.length - 5 - state.length);
@@ -287,23 +303,23 @@ function processInput(input){
 	}
 	else if(gameState == "\\.Leave"){
 		if(input == "1"){
-			departureMonth = "March";
+			month = "March";
 			changeGameState("\\.Equipment");
 		}
 		else if(input == "2"){
-			departureMonth = "April";
+			month = "April";
 			changeGameState("\\.Equipment");
 		}
 		else if(input == "3"){
-			departureMonth = "May";
+			month = "May";
 			changeGameState("\\.Equipment");
 		}
 		else if(input == "4"){
-			departureMonth = "June";
+			month = "June";
 			changeGameState("\\.Equipment");
 		}
 		else if(input == "5"){
-			departureMonth = "July";
+			month = "July";
 			changeGameState("\\.Equipment");
 		}
 		else if(input == "6"){
@@ -422,16 +438,6 @@ function loadDoc() {
 	};
 	xhttp.open("POST", "main_game_text.txt", true);
 	xhttp.send();
-	
-	var xhttp2 = new XMLHttpRequest();
-	xhttp2.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			dests = JSON.parse(this.responseText);
-		}
-	};
-	xhttp2.open("POST", "dest.txt", true);
-	xhttp2.send();
-	
 }
 
 loadDoc();
