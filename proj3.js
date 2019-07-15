@@ -101,7 +101,6 @@ function iterateGame(){
 	distance += 10;
 	var display = "distance: " + distance;
 	document.getElementById("displayText").innerHTML = display;
-<<<<<<< HEAD
 	document.getElementById("ms").className = "Grass";
 	document.getElementById("ms").style.backgroundPosition = backDrop + "% 100%";
 	backDrop--;
@@ -110,8 +109,6 @@ function iterateGame(){
 	}
 	document.getElementById("ox").className = "Walking walk" + oxNum % 5;
 	oxNum++;
-=======
->>>>>>> a2bc031cb5a2d6a5225ea548a1fd88f98d927806
 	setRightUI();
 	
 	// Sickness Logic
@@ -149,11 +146,8 @@ function iterateGame(){
 }
 
 function updateTopScreenLocation(){
-<<<<<<< HEAD
 	document.getElementById("ms").style.backgroundPosition = "";
 	document.getElementById("ox").className = "";
-=======
->>>>>>> a2bc031cb5a2d6a5225ea548a1fd88f98d927806
 	if(loc == "Independence"){
 		document.getElementById("ms").className = "Locations indepen1";
 	}
