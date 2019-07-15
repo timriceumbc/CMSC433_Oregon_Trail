@@ -1,14 +1,16 @@
-var gameIterator = setInterval(iterateGame, 1000/60);
+var gameIterator;
 var gameState = "";
 /*possible states:
 	game not started = ""
 	"\\.Start"
+	"Travel"
 	...
 */
+var myJSON = '{"0":["Independence","Kansas River Crossing",102],"1":["Kansas River crossing","Big Blue River crossing",83],"2":["Big Blue River crossing","Fort Kearney",119],"3":["Fort Kearney","Chimney Rock",250],"4":["Chimney Rock","Fort Laramie",86],"5":["Fort Laramie","Independence Rock",190],"6":["Independence Rock","South Pass",102],"7":["South Pass","Green River crossing",57],"8":["South Pass","Fort Bridger",125],"9":["Green River crossing","Soda Springs",143],"10":["Fort Bridger","Soda Springs",162],"11":["Soda Springs","Fort Hall",57],"12":["Fort Hall","Snake River crossing",182],"13":["Snake River crossing","Fort Boise",113],"14":["Fort Boise","Blue Mountains",160],"15":["Blue Mountains","Fort Walla Walla",55],"16":["Blue Mountains","The Dalles",125],"17":["Fort Walla Walla","The Dalles",120],"18":["The Dalles","Willemette Valley",100]}';
+var locJSON = JSON.parse(myJSON);
 var playerName = "";
 var occupation = "";
 var textFile = "";
-var stateText = "";
 var party = [];
 var departureMonth = "";
 var money = 0;
@@ -34,15 +36,14 @@ var foodTotal = 0;
 var	clothTotal = 0;
 var	wormTotal = 0;
 var	spareTotal = 0;
-var	partyLength = 0;
 var	loc = "Independence";
-var	oxenCost = 0;
-var	clothCost = 0;
-var	wormCost = 0;
-var	wheelCost = 0;
-var	axleCost = 0;
-var	tongueCost = 0;
-var	foodCost = 0;
+var	oxenCost = 20;
+var	foodCost = .2;
+var	clothCost = 10;
+var	wormCost = .1;
+var	wheelCost = 10;
+var	axleCost = 10;
+var	tongueCost = 10;
 var buyInput = 0;
 var	randomExchange = 0;
 var	randomExchange2 = 0;
@@ -59,6 +60,10 @@ var	wormPoint = 0;
 var	foodPoint = 0;
 var	moneyPoint = 0;
 var	points = 0;
+var distance = 0;
+var dests = "";
+var nextDestDist = locJSON[0][2];
+var locNum = 0;
 
 class Person{
 	measles = 0;
@@ -88,28 +93,135 @@ function textBoxInvisible(){
 	document.getElementById("textbg").style.height = "0px";
 }
 
+// Travel Logic
 function iterateGame(){
-	//console.log("iterate");
+	console.log("iterate");
+	distance += 10;
+	var display = "distance: " + distance;
+	document.getElementById("displayText").innerHTML = display;
+	
+	// Sickness Logic
+	for (var i = 0; i < party.length; i++){
+		if(Math.random() < .005)
+			party[i].measles = 100;
+		if(Math.random() < .005)
+			party[i].snakebite = 100;
+		if(Math.random() < .005)
+			party[i].exhaustion = 100;
+		if(Math.random() < .005)
+			party[i].typhoid = 100;
+		if(Math.random() < .005)
+			party[i].cholera = 100;
+		if(Math.random() < .005)
+			party[i].dysentery = 100;
+	}
+	console.log(party);
+	
+	// Destination Logic
+	if(distance >= 2000){
+		changeGameState("\\.Scoring")
+		// TO DO Calculate score
+	}
+	else if(distance >= nextDestDist){
+		locNum++;
+		loc = locJSON[locNum][0];
+		console.log("locNum: " + locNum);
+		console.log("loc: " + loc);
+		nextDestDist += locJSON[locNum][2];
+		clearInterval(gameIterator);
+		updateTopScreenLocation();
+		changeGameState("\\.Location")
+	}
+}
+
+function updateTopScreenLocation(){
+  if(loc == "Independence"){
+	  document.getElementById("ms").className = "Locations indepen1";
+	}
+	if(loc == "Kansas River Crossing"){
+    document.getElementById("ms").className = "Locations kansas1";
+	}
+	if(loc == "Big Blue River crossing"){
+    document.getElementById("ms").className = "Locations blueRiver1";
+	}
+	if(loc == "Fort Kearney"){
+    document.getElementById("ms").className = "Locations fortKear1";
+	}
+	if(loc == "Chimney Rock"){
+    document.getElementById("ms").className = "Locations chimney1";
+	}
+	if(loc == "Fort Laramie"){
+    document.getElementById("ms").className = "Locations fortLar1";
+	}
+	if(loc == "Independence Rock"){
+    document.getElementById("ms").className = "Locations indRock1";
+	}
+	if(loc == "South Pass"){
+    document.getElementById("ms").className = "Locations southPass1";
+	}
+	if(loc == "Fort Bridger"){
+    document.getElementById("ms").className = "Locations ???";
+	}
+	if(loc == "Green River crossing"){
+    document.getElementById("ms").className = "Locations greenRiver";
+	}
+	if(loc == "Soda Springs"){
+    document.getElementById("ms").className = "Locations ???";
+	}
+	if(loc == "Fort Hall"){
+    document.getElementById("ms").className = "Locations ???";
+	}
+	if(loc == "Snake River crossing"){
+    document.getElementById("ms").className = "Locations ???";
+	}
+	if(loc == "Fort Boise"){
+    document.getElementById("ms").className = "Locations fortBoise1";
+	}
+	if(loc == "Blue Mountains"){
+    document.getElementById("ms").className = "Locations grandeRonde";
+	}
+	if(loc == "Fort Walla Walla"){
+    document.getElementById("ms").className = "Locations ???";
+	}
+	if(loc == "The Dalles"){
+    document.getElementById("ms").className = "Locations theDalles";
+	}
+	if(loc == "Willemette Valley"){
+    document.getElementById("ms").className = "Locations ???";
+	}
 }
 
 function calcBill(){
-	bill = (oxen * 20) + (food * .2) + (clothes * 10) + (worms * .1) + (wheels * 10)
-	+ (axels * 10) + (tongues * 10);
+	oxenTotal = oxen * oxenCost;
+	foodTotal = food * foodCost;
+	clothTotal = clothes * clothCost;
+	wormTotal = worms * wormCost;
+	wheelTotal = wheels * wheelCost;
+	axleTotal = axels * axleCost;
+	tongueTotal = tongues * tongueCost;
+
+	spareTotal = wheelTotal + axleTotal + tongueTotal;
+
+	bill = oxenTotal + foodTotal + clothTotal + wormTotal + wheelTotal + axleTotal + tongueTotal;
 	console.log("bill: " + bill);
 }
 
 function changeGameState(state){
 	gameState = state;
-	stateText = "";
-	var pattern = new RegExp(state + ".*?__End", "s");
-	stateText = pattern.exec(textFile)[0];
-	stateText = stateText.substr(state.length, stateText.length - 5 - state.length);
-	stateText = valueSub(stateText);
+	var stateText = "";
+	if(state.substr(0,2) == "\\."){
+		var pattern = new RegExp(state + ".*?__End", "s");
+		stateText = pattern.exec(textFile)[0];
+		stateText = stateText.substr(state.length, stateText.length - 5 - state.length);
+		stateText = valueSub(stateText);
+	}
 	document.getElementById("displayText").innerHTML = stateText;
+	document.getElementById("peopleTxt").innerHTML = "";
 }
+
 function changeGameStatePpl(state){
 	gameState = state;
-	stateText = "";
+	var stateText = "";
 	var pattern = new RegExp(state + ".*?__End", "s");
 	stateText = pattern.exec(textFile)[0];
 	stateText = stateText.substr(state.length, stateText.length - 5 - state.length);
@@ -120,10 +232,14 @@ function changeGameStatePpl(state){
 function valueSub(stateText){
 	stateText = stateText.replace(/\(bill\)/, String(bill));
 	stateText = stateText.replace(/\(playerName\)/, String(playerName));
-	stateText = stateText.replace(/\(party[1]\)/, String(party[1]));
-	stateText = stateText.replace(/\(party[2]\)/, String(party[2]));
-	stateText = stateText.replace(/\(party[3]\)/, String(party[3]));
-	stateText = stateText.replace(/\(party[4]\)/, String(party[4]));
+	if(party[1] != null)
+		stateText = stateText.replace(/\(party\[1\]\)/, String(party[1].name));
+	if(party[2] != null)
+		stateText = stateText.replace(/\(party\[2\]\)/, String(party[2].name));
+	if(party[3] != null)
+		stateText = stateText.replace(/\(party\[3\]\)/, String(party[3].name));
+	if(party[4] != null)
+		stateText = stateText.replace(/\(party\[4\]\)/, String(party[4].name));
 	stateText = stateText.replace(/\(money\)/, String(money));
 	stateText = stateText.replace(/\(month\)/, String(month));
 	stateText = stateText.replace(/\(day\)/, String(day));
@@ -137,7 +253,7 @@ function valueSub(stateText){
 	stateText = stateText.replace(/\(clothTotal\)/, String(clothTotal));
 	stateText = stateText.replace(/\(wormTotal\)/, String(wormTotal));
 	stateText = stateText.replace(/\(spareTotal\)/, String(spareTotal));
-	stateText = stateText.replace(/\(people\)/, String(partyLength));
+	stateText = stateText.replace(/\(people\)/, String(party.length));
 	stateText = stateText.replace(/\(location\)/, String(loc));
 	stateText = stateText.replace(/\(oxenCost\)/, String(oxenCost));
 	stateText = stateText.replace(/\(clothCost\)/, String(clothCost));
@@ -190,14 +306,17 @@ function processInput(input){
 	else if(gameState == "\\.Travel"){
 		if(input == "1"){
 			occupation = "banker";
+			money = 1800;
 			changeGameState("\\.Chosen");
 		}
 		else if(input == "2"){
 			occupation = "carpenter";
+			money = 1200;
 			changeGameState("\\.Chosen");
 		}
 		else if(input == "3"){
 			occupation = "farmer";
+			money = 600;
 			changeGameState("\\.Chosen");
 		}
 		else if(input == "4"){
@@ -213,36 +332,47 @@ function processInput(input){
 		changeGameState("\\.Party");
 	}
 	else if(gameState == "\\.Party"){
-		if(party.length <= 3){
-			party.push(new Person(input));
-			changeGameState("\\.Party");
-			console.log(party)
-		}
-		else if(party.length == 4){
-			party.push(new Person(input));
-			changeGameState("\\.Leave");
-			console.log(party)
-		}
+		party.push(new Person(input));
+		changeGameState("\\.Party2");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party2"){
+		party.push(new Person(input));
+		changeGameState("\\.Party3");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party3"){
+		party.push(new Person(input));
+		changeGameState("\\.Party4");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party4"){
+		party.push(new Person(input));
+		changeGameState("\\.Party5");
+		console.log(party)
+	}
+	else if(gameState == "\\.Party5"){
+		changeGameState("\\.Leave");
 	}
 	else if(gameState == "\\.Leave"){
 		if(input == "1"){
-			departureMonth = "March";
+			month = "March";
 			changeGameState("\\.Equipment");
 		}
 		else if(input == "2"){
-			departureMonth = "April";
+			month = "April";
 			changeGameState("\\.Equipment");
 		}
 		else if(input == "3"){
-			departureMonth = "May";
+			month = "May";
 			changeGameState("\\.Equipment");
 		}
 		else if(input == "4"){
-			departureMonth = "June";
+			month = "June";
 			changeGameState("\\.Equipment");
 		}
 		else if(input == "5"){
-			departureMonth = "July";
+			month = "July";
 			changeGameState("\\.Equipment");
 		}
 		else if(input == "6"){
@@ -282,7 +412,8 @@ function processInput(input){
 		else if(input == "5"){
 			changeGameState("\\.Mattspare");
 		}
-		else if(input == ""){
+		else if(input == "" && bill <= money){
+			money -= bill;
 			changeGameState("\\.Mattdone");
 		}
 	}
@@ -336,11 +467,17 @@ function processInput(input){
 		}
 	}
 	else if(gameState == "\\.Mattdone"){
-		if(Number(input) >= 0){
-			wheels = Number(input);
-			calcBill();
-			changeGameState("\\.Location");
+		changeGameState("\\.Location");
+	}
+	else if(gameState == "\\.Location"){
+		if(input == "1"){
+			changeGameState("Travel");
+			gameIterator = setInterval(iterateGame, 1000/2);
 		}
+	}
+	else if(gameState == "Travel"){
+		changeGameState("\\.Location");
+		clearInterval(gameIterator);
 	}
 }
 
@@ -364,4 +501,4 @@ $(document).ready(function(){
 	document.body.appendChild(myCanvas);
 	document.getElementById("ms").className = "GameLogo";
 	loadDoc();
-})
+});

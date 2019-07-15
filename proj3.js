@@ -135,7 +135,60 @@ function iterateGame(){
 }
 
 function updateTopScreenLocation(){
-	document.getElementById("ms").className = "Locations indepen1";
+  if(loc == "Independence"){
+	  document.getElementById("ms").className = "Locations indepen1";
+	}
+	if(loc == "Kansas River Crossing"){
+    document.getElementById("ms").className = "Locations kansas1";
+	}
+	if(loc == "Big Blue River crossing"){
+    document.getElementById("ms").className = "Locations blueRiver1";
+	}
+	if(loc == "Fort Kearney"){
+    document.getElementById("ms").className = "Locations fortKear1";
+	}
+	if(loc == "Chimney Rock"){
+    document.getElementById("ms").className = "Locations chimney1";
+	}
+	if(loc == "Fort Laramie"){
+    document.getElementById("ms").className = "Locations fortLar1";
+	}
+	if(loc == "Independence Rock"){
+    document.getElementById("ms").className = "Locations indRock1";
+	}
+	if(loc == "South Pass"){
+    document.getElementById("ms").className = "Locations southPass1";
+	}
+	if(loc == "Fort Bridger"){
+    document.getElementById("ms").className = "Locations fortLar2";
+	}
+	if(loc == "Green River crossing"){
+    document.getElementById("ms").className = "Locations greenRiver";
+	}
+	if(loc == "Soda Springs"){
+    document.getElementById("ms").className = "Locations greenRiver";
+	}
+	if(loc == "Fort Hall"){
+    document.getElementById("ms").className = "Locations fortBoise2";
+	}
+	if(loc == "Snake River crossing"){
+    document.getElementById("ms").className = "Locations blueRiver2";
+	}
+	if(loc == "Fort Boise"){
+    document.getElementById("ms").className = "Locations fortBoise1";
+	}
+	if(loc == "Blue Mountains"){
+    document.getElementById("ms").className = "Locations grandeRonde";
+	}
+	if(loc == "Fort Walla Walla"){
+    document.getElementById("ms").className = "Locations fortLar2";
+	}
+	if(loc == "The Dalles"){
+    document.getElementById("ms").className = "Locations theDalles";
+	}
+	if(loc == "Willemette Valley"){
+    document.getElementById("ms").className = "Locations grandeRonde";
+	}
 }
 
 function calcBill(){
