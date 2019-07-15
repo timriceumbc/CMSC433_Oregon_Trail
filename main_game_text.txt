@@ -161,7 +161,7 @@ You may:
   &nbsp;&nbsp;
   1. Be a banker from Boston<br>
   &nbsp;&nbsp;
-  2. be a carpenter from Ohio<br>
+  2. Be a carpenter from Ohio<br>
   &nbsp;&nbsp;
   3. Be a farmer from Illinois<br>
   &nbsp;&nbsp;
