@@ -6,7 +6,7 @@ var gameState = "";
 	"Travel"
 	...
 */
-var myJSON = '{"0":["Independence","Kansas River Crossing",102],"1":["Kansas River crossing","Big Blue River crossing",83],"2":["Big Blue River crossing","Fort Kearney",119],"3":["Fort Kearney","Chimney Rock",250],"4":["Chimney Rock","Fort Laramie",86],"5":["Fort Laramie","Independence Rock",190],"6":["Independence Rock","South Pass",102],"7":["South Pass","Green River crossing",57],"8":["South Pass","Fort Bridger",125],"9":["Green River crossing","Soda Springs",143],"10":["Fort Bridger","Soda Springs",162],"11":["Soda Springs","Fort Hall",57],"12":["Fort Hall","Snake River crossing",182],"13":["Snake River crossing","Fort Boise",113],"14":["Fort Boise","Blue Mountains",160],"15":["Blue Mountains","Fort Walla Walla",55],"16":["Blue Mountains","The Dalles",125],"17":["Fort Walla Walla","The Dalles",120],"18":["The Dalles","Willemette Valley",100]}';
+var myJSON = '{"0":["Independence","Kansas River crossing",102],"1":["Kansas River crossing","Big Blue River crossing",83],"2":["Big Blue River crossing","Fort Kearney",119],"3":["Fort Kearney","Chimney Rock",250],"4":["Chimney Rock","Fort Laramie",86],"5":["Fort Laramie","Independence Rock",190],"6":["Independence Rock","South Pass",102],"7":["South Pass","Green River crossing",57],"8":["South Pass","Fort Bridger",125],"9":["Green River crossing","Soda Springs",143],"10":["Fort Bridger","Soda Springs",162],"11":["Soda Springs","Fort Hall",57],"12":["Fort Hall","Snake River crossing",182],"13":["Snake River crossing","Fort Boise",113],"14":["Fort Boise","Blue Mountains",160],"15":["Blue Mountains","Fort Walla Walla",55],"16":["Blue Mountains","The Dalles",125],"17":["Fort Walla Walla","The Dalles",120],"18":["The Dalles","Willemette Valley",100]}';
 var locJSON = JSON.parse(myJSON);
 var playerName = "";
 var occupation = "";
@@ -64,6 +64,8 @@ var distance = 0;
 var dests = "";
 var nextDestDist = locJSON[0][2];
 var locNum = 0;
+var oxNum = 1;
+var backDrop = 100;
 
 class Person{
 	measles = 0;
@@ -99,6 +101,15 @@ function iterateGame(){
 	distance += 10;
 	var display = "distance: " + distance;
 	document.getElementById("displayText").innerHTML = display;
+	document.getElementById("ms").className = "Grass";
+	document.getElementById("ms").style.backgroundPosition = backDrop + "% 100%";
+	backDrop--;
+	if(backDrop == -1){
+		backDrop = 100;
+	}
+	document.getElementById("ox").className = "Walking walk" + oxNum % 5;
+	oxNum++;
+	setRightUI();
 	
 	// Sickness Logic
 	for (var i = 0; i < party.length; i++){
@@ -135,59 +146,61 @@ function iterateGame(){
 }
 
 function updateTopScreenLocation(){
-  if(loc == "Independence"){
-	  document.getElementById("ms").className = "Locations indepen1";
+	document.getElementById("ms").style.backgroundPosition = "";
+	document.getElementById("ox").className = "";
+	if(loc == "Independence"){
+		document.getElementById("ms").className = "Locations indepen1";
 	}
-	if(loc == "Kansas River Crossing"){
-    document.getElementById("ms").className = "Locations kansas1";
+	if(loc == "Kansas River crossing"){
+		document.getElementById("ms").className = "Locations kansas1";
 	}
 	if(loc == "Big Blue River crossing"){
-    document.getElementById("ms").className = "Locations blueRiver1";
+		document.getElementById("ms").className = "Locations blueRiver1";
 	}
 	if(loc == "Fort Kearney"){
-    document.getElementById("ms").className = "Locations fortKear1";
+		document.getElementById("ms").className = "Locations fortKear1";
 	}
 	if(loc == "Chimney Rock"){
-    document.getElementById("ms").className = "Locations chimney1";
+		document.getElementById("ms").className = "Locations chimney1";
 	}
 	if(loc == "Fort Laramie"){
-    document.getElementById("ms").className = "Locations fortLar1";
+		document.getElementById("ms").className = "Locations fortLar1";
 	}
 	if(loc == "Independence Rock"){
-    document.getElementById("ms").className = "Locations indRock1";
+		document.getElementById("ms").className = "Locations indRock1";
 	}
 	if(loc == "South Pass"){
-    document.getElementById("ms").className = "Locations southPass1";
+		document.getElementById("ms").className = "Locations southPass1";
 	}
 	if(loc == "Fort Bridger"){
-    document.getElementById("ms").className = "Locations fortLar2";
+		document.getElementById("ms").className = "Locations fortLar2";
 	}
 	if(loc == "Green River crossing"){
-    document.getElementById("ms").className = "Locations greenRiver";
+		document.getElementById("ms").className = "Locations greenRiver";
 	}
 	if(loc == "Soda Springs"){
-    document.getElementById("ms").className = "Locations greenRiver";
+		document.getElementById("ms").className = "Locations greenRiver";
 	}
 	if(loc == "Fort Hall"){
-    document.getElementById("ms").className = "Locations fortBoise2";
+		document.getElementById("ms").className = "Locations fortBoise2";
 	}
 	if(loc == "Snake River crossing"){
-    document.getElementById("ms").className = "Locations blueRiver2";
+		document.getElementById("ms").className = "Locations blueRiver2";
 	}
 	if(loc == "Fort Boise"){
-    document.getElementById("ms").className = "Locations fortBoise1";
+		document.getElementById("ms").className = "Locations fortBoise1";
 	}
 	if(loc == "Blue Mountains"){
-    document.getElementById("ms").className = "Locations grandeRonde";
+		document.getElementById("ms").className = "Locations grandeRonde";
 	}
 	if(loc == "Fort Walla Walla"){
-    document.getElementById("ms").className = "Locations fortLar2";
+		document.getElementById("ms").className = "Locations fortLar2";
 	}
 	if(loc == "The Dalles"){
-    document.getElementById("ms").className = "Locations theDalles";
+		document.getElementById("ms").className = "Locations theDalles";
 	}
 	if(loc == "Willemette Valley"){
-    document.getElementById("ms").className = "Locations grandeRonde";
+		document.getElementById("ms").className = "Locations grandeRonde";
 	}
 }
 
@@ -502,3 +515,14 @@ $(document).ready(function(){
 	document.getElementById("ms").className = "GameLogo";
 	loadDoc();
 });
+function setRightUI(){
+	document.getElementById("weatherVal").innerHTML = weather;
+	document.getElementById("nextStop").innerHTML = "To " + locJSON[locNum][1] + ":";
+	document.getElementById("nextStopVal").innerHTML = nextDestDist - distance;
+	document.getElementById("totalDistVal").innerHTML = distance;
+	document.getElementById("foodVal").innerHTML = food;
+	document.getElementById("healthVal").innerHTML = health;
+	document.getElementById("rationVal").innerHTML = ration;
+	document.getElementById("paceVal").innerHTML = pace;
+	document.getElementById("statusVal").innerHTML = "Travelling";
+}

@@ -12,6 +12,53 @@
 	top: 17px;
 	left: 14px;
 }
+.Grass {
+	background: url("Grass.png") no-repeat;
+	width: 450px;
+	height: 298px;
+	position: absolute;
+	top: 17px;
+	left: 14px;
+	background-position: 100% 100%;
+}
+.Walking {
+	background: url("Walking.png") no-repeat;
+	width: 872px;
+	height: 70px;
+	position: absolute;
+	top: 196px;
+	left: 200px;
+}
+.walk0 {
+	width: 145px;
+	height: 70px;
+	background-position: 0% 0%;
+	display: inline-block;
+}
+.walk1 {
+	width: 145px;
+	height: 70px;
+	background-position: 20% 0%;
+	display: inline-block;
+}
+.walk2 {
+	width: 145px;
+	height: 70px;
+	background-position: 40% 0%;
+	display: inline-block;
+}
+.walk3 {
+	width: 145px;
+	height: 70px;
+	background-position: 60% 0%;
+	display: inline-block;
+}
+.walk4 {
+	width: 145px;
+	height: 70px;
+	background-position: 80% 0%;
+	display: inline-block;
+}
 .mainScreen {
 	position: absolute;
 	top: 17px;

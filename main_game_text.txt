@@ -530,11 +530,6 @@ __End
   &nbsp;&nbsp;
   (month) (day), (year)<br><br>
 
-Weather: (weather)<br>
-Health: (health)<br>
-Pace: (pace)<br>
-Rations: (ration)<br><br>
-
 You May:
   <br><br>
   &nbsp;&nbsp;
