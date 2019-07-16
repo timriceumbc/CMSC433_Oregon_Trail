@@ -1,6 +1,11 @@
 .Blank
 __End
 
+.Dead
+A disease got so bad that everyone caught it and died.<br>
+Game Over
+__End
+
 .Start
 You May:
   <br><br>
@@ -846,6 +851,10 @@ that he will charge you (ferryCost) and<br>
 that you will have to wait (dayCost)<br>
 days. Are you willing to do<br>
 this?
+__End
+
+.Rest
+You stopped to rest. Party members with sickness recover after resting.
 __End
 
 .Ontrail

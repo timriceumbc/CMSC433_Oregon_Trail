@@ -68,12 +68,8 @@ var oxNum = 1;
 var backDrop = 100;
 
 class Person{
-	measles = 0;
-	snakebite = 0;
-	exhaustion = 0;
-	typhoid = 0;
-	cholera = 0;
-	dysentery = 0;
+	sick = false;
+	alive = true;
 	name = "";
 
 	constructor(name){
@@ -98,8 +94,13 @@ function textBoxInvisible(){
 // Travel Logic
 function iterateGame(){
 	console.log("iterate");
-	distance += 10;
-	var display = "distance: " + distance;
+	distance += 1;
+	var display = "Press ENTER to stop.<br>";
+	for (var i = 0; i < party.length; i++){
+			if(party[i].sick == true){
+				display += party[i].name + " is sick.<br>";
+			}
+	}
 	document.getElementById("displayText").innerHTML = display;
 	document.getElementById("ms").className = "Grass";
 	document.getElementById("ms").style.backgroundPosition = backDrop + "% 100%";
@@ -113,24 +114,24 @@ function iterateGame(){
 	
 	// Sickness Logic
 	for (var i = 0; i < party.length; i++){
-		if(Math.random() < .005)
-			party[i].measles = 100;
-		if(Math.random() < .005)
-			party[i].snakebite = 100;
-		if(Math.random() < .005)
-			party[i].exhaustion = 100;
-		if(Math.random() < .005)
-			party[i].typhoid = 100;
-		if(Math.random() < .005)
-			party[i].cholera = 100;
-		if(Math.random() < .005)
-			party[i].dysentery = 100;
+		if(Math.random() < .002){
+			if(party[i].sick == true){
+				party[i].alive = false;
+				clearInterval(gameIterator);
+				changeGameState("\\.Dead");
+				document.getElementById("ms").style.backgroundPosition = "";
+				document.getElementById("ox").className = "";
+				document.getElementById("ms").className = "Locations grave2";
+			}
+			party[i].sick = true;
+		}
 	}
 	console.log(party);
 	
 	// Destination Logic
 	if(distance >= 2000){
 		changeGameState("\\.Scoring")
+		clearInterval(gameIterator);
 		// TO DO Calculate score
 	}
 	else if(distance >= nextDestDist){
@@ -141,7 +142,7 @@ function iterateGame(){
 		nextDestDist += locJSON[locNum][2];
 		clearInterval(gameIterator);
 		updateTopScreenLocation();
-		changeGameState("\\.Location")
+		changeGameState("\\.Location");
 	}
 }
 
@@ -485,12 +486,21 @@ function processInput(input){
 	else if(gameState == "\\.Location"){
 		if(input == "1"){
 			changeGameState("Travel");
-			gameIterator = setInterval(iterateGame, 1000/2);
+			gameIterator = setInterval(iterateGame, 1000/20);
+		}
+		if(input == "5"){
+			changeGameState("\\.Rest");
+			for (var i = 0; i < party.length; i++){
+				party[i].sick = false;
+			}
 		}
 	}
 	else if(gameState == "Travel"){
 		changeGameState("\\.Location");
 		clearInterval(gameIterator);
+	}
+	else if(gameState == "\\.Rest"){
+		changeGameState("\\.Location");
 	}
 }
 
@@ -506,8 +516,6 @@ function loadDoc() {
 	xhttp.send();
 }
 
-loadDoc();
-
 $(document).ready(function(){
 	var myCanvas = document.createElement("canvas");
 	myCanvas.className = "UI";
@@ -515,6 +523,7 @@ $(document).ready(function(){
 	document.getElementById("ms").className = "GameLogo";
 	loadDoc();
 });
+
 function setRightUI(){
 	document.getElementById("weatherVal").innerHTML = weather;
 	document.getElementById("nextStop").innerHTML = "To " + locJSON[locNum][1] + ":";
@@ -524,5 +533,5 @@ function setRightUI(){
 	document.getElementById("healthVal").innerHTML = health;
 	document.getElementById("rationVal").innerHTML = ration;
 	document.getElementById("paceVal").innerHTML = pace;
-	document.getElementById("statusVal").innerHTML = "Travelling";
+	document.getElementById("statusVal").innerHTML = "Traveling";
 }
